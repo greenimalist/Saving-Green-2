@@ -7,8 +7,21 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "HotColdVC.h"
+#import "KitchenVC.h"
+#import "ElectronicsVC.h"
+#import "LightingVC.h"
+#import "TransitVC.h"
 
-@interface SavingGreenAppDelegate : NSObject <NSApplicationDelegate> {
+@interface SavingGreenAppDelegate : NSObject <NSApplicationDelegate, NSTabViewDelegate> {
+    
+    HotColdVC *hotColdVC;
+    KitchenVC *kitchenVC;
+    ElectronicsVC *electronicsVC;
+    LightingVC *lightingVC;
+    TransitVC *transitVC;
+
+    IBOutlet NSTabView *tabView;
 @private
     NSWindow *window;
 }

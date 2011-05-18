@@ -17,6 +17,16 @@
 		0EB7DCA91384125100A198D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7DCA71384125100A198D7 /* InfoPlist.strings */; };
 		0EB7DCAC1384125100A198D7 /* SavingGreenTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7DCAB1384125100A198D7 /* SavingGreenTests.h */; };
 		0EB7DCAE1384125100A198D7 /* SavingGreenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7DCAD1384125100A198D7 /* SavingGreenTests.m */; };
+		0EB7DCBA1384148600A198D7 /* HotColdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7DCB81384148600A198D7 /* HotColdVC.m */; };
+		0EB7DCBB1384148600A198D7 /* HotColdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7DCB91384148600A198D7 /* HotColdVC.xib */; };
+		0EB7DCBF1384149A00A198D7 /* KitchenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7DCBD1384149900A198D7 /* KitchenVC.m */; };
+		0EB7DCC01384149A00A198D7 /* KitchenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7DCBE1384149A00A198D7 /* KitchenVC.xib */; };
+		0EB7DCC4138414AB00A198D7 /* LightingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7DCC2138414AA00A198D7 /* LightingVC.m */; };
+		0EB7DCC5138414AB00A198D7 /* LightingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7DCC3138414AB00A198D7 /* LightingVC.xib */; };
+		0EB7DCC9138414CA00A198D7 /* TransitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7DCC7138414C900A198D7 /* TransitVC.m */; };
+		0EB7DCCA138414CA00A198D7 /* TransitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7DCC8138414C900A198D7 /* TransitVC.xib */; };
+		0EB7DCD1138414FE00A198D7 /* ElectronicsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7DCCF138414FC00A198D7 /* ElectronicsVC.m */; };
+		0EB7DCD2138414FE00A198D7 /* ElectronicsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7DCD0138414FD00A198D7 /* ElectronicsVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +45,35 @@
 		0EB7DC861384125000A198D7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		0EB7DC871384125000A198D7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0EB7DC881384125000A198D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		0EB7DC8B1384125000A198D7 /* SavingGreen-Info.plist */ = {isa = PBXFileReference; path = "SavingGreen-Info.plist"; sourceTree = "<group>"; };
+		0EB7DC8B1384125000A198D7 /* SavingGreen-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SavingGreen-Info.plist"; sourceTree = "<group>"; };
 		0EB7DC8D1384125000A198D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0EB7DC8F1384125000A198D7 /* SavingGreen-Prefix.pch */ = {isa = PBXFileReference; path = "SavingGreen-Prefix.pch"; sourceTree = "<group>"; };
+		0EB7DC8F1384125000A198D7 /* SavingGreen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SavingGreen-Prefix.pch"; sourceTree = "<group>"; };
 		0EB7DC901384125000A198D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0EB7DC931384125000A198D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		0EB7DC951384125000A198D7 /* SavingGreenAppDelegate.h */ = {isa = PBXFileReference; path = SavingGreenAppDelegate.h; sourceTree = "<group>"; };
+		0EB7DC951384125000A198D7 /* SavingGreenAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SavingGreenAppDelegate.h; sourceTree = "<group>"; };
 		0EB7DC961384125000A198D7 /* SavingGreenAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SavingGreenAppDelegate.m; sourceTree = "<group>"; };
 		0EB7DC991384125100A198D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0EB7DCA01384125100A198D7 /* SavingGreenTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SavingGreenTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0EB7DCA61384125100A198D7 /* SavingGreenTests-Info.plist */ = {isa = PBXFileReference; path = "SavingGreenTests-Info.plist"; sourceTree = "<group>"; };
+		0EB7DCA61384125100A198D7 /* SavingGreenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SavingGreenTests-Info.plist"; sourceTree = "<group>"; };
 		0EB7DCA81384125100A198D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0EB7DCAA1384125100A198D7 /* SavingGreenTests-Prefix.pch */ = {isa = PBXFileReference; path = "SavingGreenTests-Prefix.pch"; sourceTree = "<group>"; };
+		0EB7DCAA1384125100A198D7 /* SavingGreenTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SavingGreenTests-Prefix.pch"; sourceTree = "<group>"; };
 		0EB7DCAB1384125100A198D7 /* SavingGreenTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SavingGreenTests.h; sourceTree = "<group>"; };
 		0EB7DCAD1384125100A198D7 /* SavingGreenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SavingGreenTests.m; sourceTree = "<group>"; };
+		0EB7DCB71384148600A198D7 /* HotColdVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotColdVC.h; sourceTree = "<group>"; };
+		0EB7DCB81384148600A198D7 /* HotColdVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotColdVC.m; sourceTree = "<group>"; };
+		0EB7DCB91384148600A198D7 /* HotColdVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotColdVC.xib; sourceTree = "<group>"; };
+		0EB7DCBC1384149900A198D7 /* KitchenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KitchenVC.h; sourceTree = "<group>"; };
+		0EB7DCBD1384149900A198D7 /* KitchenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KitchenVC.m; sourceTree = "<group>"; };
+		0EB7DCBE1384149A00A198D7 /* KitchenVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KitchenVC.xib; sourceTree = "<group>"; };
+		0EB7DCC1138414AA00A198D7 /* LightingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightingVC.h; sourceTree = "<group>"; };
+		0EB7DCC2138414AA00A198D7 /* LightingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightingVC.m; sourceTree = "<group>"; };
+		0EB7DCC3138414AB00A198D7 /* LightingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LightingVC.xib; sourceTree = "<group>"; };
+		0EB7DCC6138414C900A198D7 /* TransitVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitVC.h; sourceTree = "<group>"; };
+		0EB7DCC7138414C900A198D7 /* TransitVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitVC.m; sourceTree = "<group>"; };
+		0EB7DCC8138414C900A198D7 /* TransitVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransitVC.xib; sourceTree = "<group>"; };
+		0EB7DCCE138414FC00A198D7 /* ElectronicsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectronicsVC.h; sourceTree = "<group>"; };
+		0EB7DCCF138414FC00A198D7 /* ElectronicsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectronicsVC.m; sourceTree = "<group>"; };
+		0EB7DCD0138414FD00A198D7 /* ElectronicsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ElectronicsVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +139,21 @@
 			children = (
 				0EB7DC951384125000A198D7 /* SavingGreenAppDelegate.h */,
 				0EB7DC961384125000A198D7 /* SavingGreenAppDelegate.m */,
+				0EB7DCB71384148600A198D7 /* HotColdVC.h */,
+				0EB7DCB81384148600A198D7 /* HotColdVC.m */,
+				0EB7DCB91384148600A198D7 /* HotColdVC.xib */,
+				0EB7DCBC1384149900A198D7 /* KitchenVC.h */,
+				0EB7DCBD1384149900A198D7 /* KitchenVC.m */,
+				0EB7DCBE1384149A00A198D7 /* KitchenVC.xib */,
+				0EB7DCCE138414FC00A198D7 /* ElectronicsVC.h */,
+				0EB7DCCF138414FC00A198D7 /* ElectronicsVC.m */,
+				0EB7DCD0138414FD00A198D7 /* ElectronicsVC.xib */,
+				0EB7DCC1138414AA00A198D7 /* LightingVC.h */,
+				0EB7DCC2138414AA00A198D7 /* LightingVC.m */,
+				0EB7DCC3138414AB00A198D7 /* LightingVC.xib */,
+				0EB7DCC6138414C900A198D7 /* TransitVC.h */,
+				0EB7DCC7138414C900A198D7 /* TransitVC.m */,
+				0EB7DCC8138414C900A198D7 /* TransitVC.xib */,
 				0EB7DC981384125100A198D7 /* MainMenu.xib */,
 				0EB7DC8A1384125000A198D7 /* Supporting Files */,
 			);
@@ -222,6 +262,11 @@
 				0EB7DC8E1384125000A198D7 /* InfoPlist.strings in Resources */,
 				0EB7DC941384125000A198D7 /* Credits.rtf in Resources */,
 				0EB7DC9A1384125100A198D7 /* MainMenu.xib in Resources */,
+				0EB7DCBB1384148600A198D7 /* HotColdVC.xib in Resources */,
+				0EB7DCC01384149A00A198D7 /* KitchenVC.xib in Resources */,
+				0EB7DCC5138414AB00A198D7 /* LightingVC.xib in Resources */,
+				0EB7DCCA138414CA00A198D7 /* TransitVC.xib in Resources */,
+				0EB7DCD2138414FE00A198D7 /* ElectronicsVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +304,11 @@
 			files = (
 				0EB7DC911384125000A198D7 /* main.m in Sources */,
 				0EB7DC971384125000A198D7 /* SavingGreenAppDelegate.m in Sources */,
+				0EB7DCBA1384148600A198D7 /* HotColdVC.m in Sources */,
+				0EB7DCBF1384149A00A198D7 /* KitchenVC.m in Sources */,
+				0EB7DCC4138414AB00A198D7 /* LightingVC.m in Sources */,
+				0EB7DCC9138414CA00A198D7 /* TransitVC.m in Sources */,
+				0EB7DCD1138414FE00A198D7 /* ElectronicsVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
