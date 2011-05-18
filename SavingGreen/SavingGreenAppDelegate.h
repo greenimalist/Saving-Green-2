@@ -12,18 +12,16 @@
 #import "ElectronicsVC.h"
 #import "LightingVC.h"
 #import "TransitVC.h"
-#import "CalcChartTabVC.h"
 
-@interface SavingGreenAppDelegate : NSObject <NSApplicationDelegate, NSTabViewDelegate> {
+@interface SavingGreenAppDelegate : NSObject <NSApplicationDelegate> {
     
-    CalcChartTabVC *calcChartTabVC;
     HotColdVC *hotColdVC;
     KitchenVC *kitchenVC;
     ElectronicsVC *electronicsVC;
     LightingVC *lightingVC;
     TransitVC *transitVC;
+    IBOutlet NSView *mainView;
 
-    IBOutlet NSTabView *tabView;
 @private
     NSWindow *window;
 }
