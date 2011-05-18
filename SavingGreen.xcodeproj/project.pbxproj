@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EB7DC841384125000A198D7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EB7DC831384125000A198D7 /* Cocoa.framework */; };
+		0EB7DC8E1384125000A198D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7DC8C1384125000A198D7 /* InfoPlist.strings */; };
+		0EB7DC911384125000A198D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7DC901384125000A198D7 /* main.m */; };
+		0EB7DC941384125000A198D7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7DC921384125000A198D7 /* Credits.rtf */; };
+		0EB7DC971384125000A198D7 /* SavingGreenAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7DC961384125000A198D7 /* SavingGreenAppDelegate.m */; };
+		0EB7DC9A1384125100A198D7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7DC981384125100A198D7 /* MainMenu.xib */; };
+		0EB7DCA11384125100A198D7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EB7DC831384125000A198D7 /* Cocoa.framework */; };
+		0EB7DCA91384125100A198D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7DCA71384125100A198D7 /* InfoPlist.strings */; };
+		0EB7DCAC1384125100A198D7 /* SavingGreenTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7DCAB1384125100A198D7 /* SavingGreenTests.h */; };
+		0EB7DCAE1384125100A198D7 /* SavingGreenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7DCAD1384125100A198D7 /* SavingGreenTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0EB7DCA21384125100A198D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EB7DC761384124F00A198D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EB7DC7E1384124F00A198D7;
+			remoteInfo = SavingGreen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0EB7DC7F1384125000A198D7 /* SavingGreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavingGreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EB7DC831384125000A198D7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0EB7DC861384125000A198D7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0EB7DC871384125000A198D7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0EB7DC881384125000A198D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0EB7DC8B1384125000A198D7 /* SavingGreen-Info.plist */ = {isa = PBXFileReference; path = "SavingGreen-Info.plist"; sourceTree = "<group>"; };
+		0EB7DC8D1384125000A198D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0EB7DC8F1384125000A198D7 /* SavingGreen-Prefix.pch */ = {isa = PBXFileReference; path = "SavingGreen-Prefix.pch"; sourceTree = "<group>"; };
+		0EB7DC901384125000A198D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0EB7DC931384125000A198D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		0EB7DC951384125000A198D7 /* SavingGreenAppDelegate.h */ = {isa = PBXFileReference; path = SavingGreenAppDelegate.h; sourceTree = "<group>"; };
+		0EB7DC961384125000A198D7 /* SavingGreenAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SavingGreenAppDelegate.m; sourceTree = "<group>"; };
+		0EB7DC991384125100A198D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0EB7DCA01384125100A198D7 /* SavingGreenTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SavingGreenTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EB7DCA61384125100A198D7 /* SavingGreenTests-Info.plist */ = {isa = PBXFileReference; path = "SavingGreenTests-Info.plist"; sourceTree = "<group>"; };
+		0EB7DCA81384125100A198D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0EB7DCAA1384125100A198D7 /* SavingGreenTests-Prefix.pch */ = {isa = PBXFileReference; path = "SavingGreenTests-Prefix.pch"; sourceTree = "<group>"; };
+		0EB7DCAB1384125100A198D7 /* SavingGreenTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SavingGreenTests.h; sourceTree = "<group>"; };
+		0EB7DCAD1384125100A198D7 /* SavingGreenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SavingGreenTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0EB7DC7C1384124F00A198D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EB7DC841384125000A198D7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EB7DC9C1384125100A198D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EB7DCA11384125100A198D7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EB7DC741384124F00A198D7 = {
+			isa = PBXGroup;
+			children = (
+				0EB7DC891384125000A198D7 /* SavingGreen */,
+				0EB7DCA41384125100A198D7 /* SavingGreenTests */,
+				0EB7DC821384125000A198D7 /* Frameworks */,
+				0EB7DC801384125000A198D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0EB7DC801384125000A198D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0EB7DC7F1384125000A198D7 /* SavingGreen.app */,
+				0EB7DCA01384125100A198D7 /* SavingGreenTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0EB7DC821384125000A198D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EB7DC831384125000A198D7 /* Cocoa.framework */,
+				0EB7DC851384125000A198D7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0EB7DC851384125000A198D7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EB7DC861384125000A198D7 /* AppKit.framework */,
+				0EB7DC871384125000A198D7 /* CoreData.framework */,
+				0EB7DC881384125000A198D7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		0EB7DC891384125000A198D7 /* SavingGreen */ = {
+			isa = PBXGroup;
+			children = (
+				0EB7DC951384125000A198D7 /* SavingGreenAppDelegate.h */,
+				0EB7DC961384125000A198D7 /* SavingGreenAppDelegate.m */,
+				0EB7DC981384125100A198D7 /* MainMenu.xib */,
+				0EB7DC8A1384125000A198D7 /* Supporting Files */,
+			);
+			path = SavingGreen;
+			sourceTree = "<group>";
+		};
+		0EB7DC8A1384125000A198D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0EB7DC8B1384125000A198D7 /* SavingGreen-Info.plist */,
+				0EB7DC8C1384125000A198D7 /* InfoPlist.strings */,
+				0EB7DC8F1384125000A198D7 /* SavingGreen-Prefix.pch */,
+				0EB7DC901384125000A198D7 /* main.m */,
+				0EB7DC921384125000A198D7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0EB7DCA41384125100A198D7 /* SavingGreenTests */ = {
+			isa = PBXGroup;
+			children = (
+				0EB7DCAB1384125100A198D7 /* SavingGreenTests.h */,
+				0EB7DCAD1384125100A198D7 /* SavingGreenTests.m */,
+				0EB7DCA51384125100A198D7 /* Supporting Files */,
+			);
+			path = SavingGreenTests;
+			sourceTree = "<group>";
+		};
+		0EB7DCA51384125100A198D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0EB7DCA61384125100A198D7 /* SavingGreenTests-Info.plist */,
+				0EB7DCA71384125100A198D7 /* InfoPlist.strings */,
+				0EB7DCAA1384125100A198D7 /* SavingGreenTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0EB7DC7E1384124F00A198D7 /* SavingGreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EB7DCB11384125100A198D7 /* Build configuration list for PBXNativeTarget "SavingGreen" */;
+			buildPhases = (
+				0EB7DC7B1384124F00A198D7 /* Sources */,
+				0EB7DC7C1384124F00A198D7 /* Frameworks */,
+				0EB7DC7D1384124F00A198D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SavingGreen;
+			productName = SavingGreen;
+			productReference = 0EB7DC7F1384125000A198D7 /* SavingGreen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0EB7DC9F1384125100A198D7 /* SavingGreenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EB7DCB41384125100A198D7 /* Build configuration list for PBXNativeTarget "SavingGreenTests" */;
+			buildPhases = (
+				0EB7DC9B1384125100A198D7 /* Sources */,
+				0EB7DC9C1384125100A198D7 /* Frameworks */,
+				0EB7DC9D1384125100A198D7 /* Resources */,
+				0EB7DC9E1384125100A198D7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EB7DCA31384125100A198D7 /* PBXTargetDependency */,
+			);
+			name = SavingGreenTests;
+			productName = SavingGreenTests;
+			productReference = 0EB7DCA01384125100A198D7 /* SavingGreenTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0EB7DC761384124F00A198D7 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 0EB7DC791384124F00A198D7 /* Build configuration list for PBXProject "SavingGreen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0EB7DC741384124F00A198D7;
+			productRefGroup = 0EB7DC801384125000A198D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0EB7DC7E1384124F00A198D7 /* SavingGreen */,
+				0EB7DC9F1384125100A198D7 /* SavingGreenTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0EB7DC7D1384124F00A198D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EB7DC8E1384125000A198D7 /* InfoPlist.strings in Resources */,
+				0EB7DC941384125000A198D7 /* Credits.rtf in Resources */,
+				0EB7DC9A1384125100A198D7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EB7DC9D1384125100A198D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EB7DCA91384125100A198D7 /* InfoPlist.strings in Resources */,
+				0EB7DCAC1384125100A198D7 /* SavingGreenTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EB7DC9E1384125100A198D7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EB7DC7B1384124F00A198D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EB7DC911384125000A198D7 /* main.m in Sources */,
+				0EB7DC971384125000A198D7 /* SavingGreenAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EB7DC9B1384125100A198D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EB7DCAE1384125100A198D7 /* SavingGreenTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0EB7DCA31384125100A198D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EB7DC7E1384124F00A198D7 /* SavingGreen */;
+			targetProxy = 0EB7DCA21384125100A198D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0EB7DC8C1384125000A198D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EB7DC8D1384125000A198D7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0EB7DC921384125000A198D7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EB7DC931384125000A198D7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		0EB7DC981384125100A198D7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EB7DC991384125100A198D7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		0EB7DCA71384125100A198D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EB7DCA81384125100A198D7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0EB7DCAF1384125100A198D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0EB7DCB01384125100A198D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0EB7DCB21384125100A198D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SavingGreen/SavingGreen-Prefix.pch";
+				INFOPLIST_FILE = "SavingGreen/SavingGreen-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0EB7DCB31384125100A198D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SavingGreen/SavingGreen-Prefix.pch";
+				INFOPLIST_FILE = "SavingGreen/SavingGreen-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0EB7DCB51384125100A198D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SavingGreen.app/Contents/MacOS/SavingGreen";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SavingGreenTests/SavingGreenTests-Prefix.pch";
+				INFOPLIST_FILE = "SavingGreenTests/SavingGreenTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0EB7DCB61384125100A198D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SavingGreen.app/Contents/MacOS/SavingGreen";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SavingGreenTests/SavingGreenTests-Prefix.pch";
+				INFOPLIST_FILE = "SavingGreenTests/SavingGreenTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0EB7DC791384124F00A198D7 /* Build configuration list for PBXProject "SavingGreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EB7DCAF1384125100A198D7 /* Debug */,
+				0EB7DCB01384125100A198D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EB7DCB11384125100A198D7 /* Build configuration list for PBXNativeTarget "SavingGreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EB7DCB21384125100A198D7 /* Debug */,
+				0EB7DCB31384125100A198D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0EB7DCB41384125100A198D7 /* Build configuration list for PBXNativeTarget "SavingGreenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EB7DCB51384125100A198D7 /* Debug */,
+				0EB7DCB61384125100A198D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0EB7DC761384124F00A198D7 /* Project object */;
+}
