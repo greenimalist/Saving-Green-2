@@ -14,16 +14,18 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    calcChartTabVC = [[CalcChartTabVC alloc] initWithNibName:@"CalcChartTabVC" bundle:nil];
+    [[[tabView tabViewItemAtIndex:0] view] addSubview:calcChartTabVC.view];
+    [[[tabView tabViewItemAtIndex:1] view] addSubview:calcChartTabVC.view];
+    [[[tabView tabViewItemAtIndex:2] view] addSubview:calcChartTabVC.view];
+    [[[tabView tabViewItemAtIndex:3] view] addSubview:calcChartTabVC.view];
+    [[[tabView tabViewItemAtIndex:4] view] addSubview:calcChartTabVC.view];
+    
     hotColdVC = [[HotColdVC alloc] initWithNibName:@"HotColdVC" bundle:nil];
-    [[[tabView tabViewItemAtIndex:0] view] addSubview:hotColdVC.view];
     kitchenVC = [[KitchenVC alloc] initWithNibName:@"KitchenVC" bundle:nil];
-    [[[tabView tabViewItemAtIndex:1] view] addSubview:kitchenVC.view];
     electronicsVC = [[ElectronicsVC alloc] initWithNibName:@"ElectronicsVC" bundle:nil];
-    [[[tabView tabViewItemAtIndex:2] view] addSubview:electronicsVC.view];
     lightingVC = [[LightingVC alloc] initWithNibName:@"LightingVC" bundle:nil];
-    [[[tabView tabViewItemAtIndex:3] view] addSubview:lightingVC.view];
     transitVC = [[TransitVC alloc] initWithNibName:@"TransitVC" bundle:nil];
-    [[[tabView tabViewItemAtIndex:4] view] addSubview:transitVC.view];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

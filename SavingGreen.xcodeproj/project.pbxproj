@@ -27,6 +27,8 @@
 		0EB7DCCA138414CA00A198D7 /* TransitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7DCC8138414C900A198D7 /* TransitVC.xib */; };
 		0EB7DCD1138414FE00A198D7 /* ElectronicsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7DCCF138414FC00A198D7 /* ElectronicsVC.m */; };
 		0EB7DCD2138414FE00A198D7 /* ElectronicsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7DCD0138414FD00A198D7 /* ElectronicsVC.xib */; };
+		0EB7DCD613841AA300A198D7 /* CalcChartTabVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7DCD413841AA000A198D7 /* CalcChartTabVC.m */; };
+		0EB7DCD713841AA400A198D7 /* CalcChartTabVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7DCD513841AA100A198D7 /* CalcChartTabVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,9 @@
 		0EB7DCCE138414FC00A198D7 /* ElectronicsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectronicsVC.h; sourceTree = "<group>"; };
 		0EB7DCCF138414FC00A198D7 /* ElectronicsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectronicsVC.m; sourceTree = "<group>"; };
 		0EB7DCD0138414FD00A198D7 /* ElectronicsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ElectronicsVC.xib; sourceTree = "<group>"; };
+		0EB7DCD313841A9F00A198D7 /* CalcChartTabVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcChartTabVC.h; sourceTree = "<group>"; };
+		0EB7DCD413841AA000A198D7 /* CalcChartTabVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcChartTabVC.m; sourceTree = "<group>"; };
+		0EB7DCD513841AA100A198D7 /* CalcChartTabVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalcChartTabVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +144,9 @@
 			children = (
 				0EB7DC951384125000A198D7 /* SavingGreenAppDelegate.h */,
 				0EB7DC961384125000A198D7 /* SavingGreenAppDelegate.m */,
+				0EB7DCD313841A9F00A198D7 /* CalcChartTabVC.h */,
+				0EB7DCD413841AA000A198D7 /* CalcChartTabVC.m */,
+				0EB7DCD513841AA100A198D7 /* CalcChartTabVC.xib */,
 				0EB7DCB71384148600A198D7 /* HotColdVC.h */,
 				0EB7DCB81384148600A198D7 /* HotColdVC.m */,
 				0EB7DCB91384148600A198D7 /* HotColdVC.xib */,
@@ -267,6 +275,7 @@
 				0EB7DCC5138414AB00A198D7 /* LightingVC.xib in Resources */,
 				0EB7DCCA138414CA00A198D7 /* TransitVC.xib in Resources */,
 				0EB7DCD2138414FE00A198D7 /* ElectronicsVC.xib in Resources */,
+				0EB7DCD713841AA400A198D7 /* CalcChartTabVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +318,7 @@
 				0EB7DCC4138414AB00A198D7 /* LightingVC.m in Sources */,
 				0EB7DCC9138414CA00A198D7 /* TransitVC.m in Sources */,
 				0EB7DCD1138414FE00A198D7 /* ElectronicsVC.m in Sources */,
+				0EB7DCD613841AA300A198D7 /* CalcChartTabVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
