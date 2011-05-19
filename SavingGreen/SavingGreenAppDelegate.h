@@ -13,7 +13,7 @@
 #import "LightingVC.h"
 #import "TransitVC.h"
 
-@interface SavingGreenAppDelegate : NSObject <NSApplicationDelegate> {
+@interface SavingGreenAppDelegate : NSObject <NSApplicationDelegate, NSTableViewDataSource> {
     
     HotColdVC *hotColdVC;
     KitchenVC *kitchenVC;
