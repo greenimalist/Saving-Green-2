@@ -12,7 +12,6 @@
 #import "ElectronicsVC.h"
 #import "LightingVC.h"
 #import "TransitVC.h"
-//#import "Appliance.h"
 
 @interface SavingGreenAppDelegate : NSObject <NSApplicationDelegate> {
     

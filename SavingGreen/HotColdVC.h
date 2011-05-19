@@ -12,8 +12,12 @@
 @interface HotColdVC : NSViewController {
     
     Appliance *heater;
+    Appliance *cooler;
 @private
     
 }
+
+@property (readonly) Appliance *heater;
+@property (readonly) Appliance *cooler;
 
 @end

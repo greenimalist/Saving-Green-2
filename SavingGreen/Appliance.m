@@ -51,12 +51,25 @@
 - (double)monthlyCost {
     if (minutesPerDay != 0.0)
         hoursPerDay = minutesPerDay / 60.0;
-    
-    return powerRating / kWattsPerKiloWatt * hoursPerDay * kDaysPerMonth * kElectricRate;
+
+    double result = powerRating / kWattsPerKiloWatt * hoursPerDay * kDaysPerMonth * kElectricRate * numberOfAppliances;
+
+    return result;
 }
 
 - (double)annualCost {
+    NSLog(@"Months per Year: %f", monthsPerYear);
     return [self monthlyCost] * monthsPerYear;
+}
+
+- (void)setValue:(id)value forKey:(NSString *)key {
+    [self willChangeValueForKey:@"monthlyCost"];
+    [self willChangeValueForKey:@"annualCost"];
+
+    [super setValue:value forKey:key];
+
+    [self didChangeValueForKey:@"monthlyCost"];
+    [self didChangeValueForKey:@"annualCost"];
 }
 
 @end

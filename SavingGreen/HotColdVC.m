@@ -10,12 +10,21 @@
 
 
 @implementation HotColdVC
+@synthesize heater, cooler;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Initialization code here.
+        heater = [[Appliance alloc] init];
+        heater.numberOfAppliances = 1;
+        heater.hoursPerDay = 12;
+        heater.monthsPerYear = 6;
+        
+        cooler = [[Appliance alloc] init];
+        cooler.numberOfAppliances = 1;
+        cooler.hoursPerDay = 12;
+        cooler.monthsPerYear = 6;
     }
     
     return self;
@@ -23,6 +32,8 @@
 
 - (void)dealloc
 {
+    [heater release];
+    [cooler release];
     [super dealloc];
 }
 
