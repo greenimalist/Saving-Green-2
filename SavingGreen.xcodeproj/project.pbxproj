@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E63E1ED1384A3C100F59540 /* Appliance.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E63E1EC1384A3C100F59540 /* Appliance.m */; };
 		0EB7DC841384125000A198D7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EB7DC831384125000A198D7 /* Cocoa.framework */; };
 		0EB7DC8E1384125000A198D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7DC8C1384125000A198D7 /* InfoPlist.strings */; };
 		0EB7DC911384125000A198D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7DC901384125000A198D7 /* main.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E63E1EB1384A3C100F59540 /* Appliance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appliance.h; sourceTree = "<group>"; };
+		0E63E1EC1384A3C100F59540 /* Appliance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appliance.m; sourceTree = "<group>"; };
 		0EB7DC7F1384125000A198D7 /* SavingGreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavingGreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB7DC831384125000A198D7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0EB7DC861384125000A198D7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -142,6 +145,8 @@
 				0EB7DCB71384148600A198D7 /* HotColdVC.h */,
 				0EB7DCB81384148600A198D7 /* HotColdVC.m */,
 				0EB7DCB91384148600A198D7 /* HotColdVC.xib */,
+				0E63E1EB1384A3C100F59540 /* Appliance.h */,
+				0E63E1EC1384A3C100F59540 /* Appliance.m */,
 				0EB7DCBC1384149900A198D7 /* KitchenVC.h */,
 				0EB7DCBD1384149900A198D7 /* KitchenVC.m */,
 				0EB7DCBE1384149A00A198D7 /* KitchenVC.xib */,
@@ -309,6 +314,7 @@
 				0EB7DCC4138414AB00A198D7 /* LightingVC.m in Sources */,
 				0EB7DCC9138414CA00A198D7 /* TransitVC.m in Sources */,
 				0EB7DCD1138414FE00A198D7 /* ElectronicsVC.m in Sources */,
+				0E63E1ED1384A3C100F59540 /* Appliance.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
