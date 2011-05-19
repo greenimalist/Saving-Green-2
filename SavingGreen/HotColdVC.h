@@ -7,9 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+#import "Appliance.h"
 
 @interface HotColdVC : NSViewController {
+    
+    Appliance *heater;
 @private
     
 }

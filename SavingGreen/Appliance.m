@@ -10,6 +10,7 @@
 #define kDaysPerMonth 30.25
 #define kWattsPerKiloWatt 1000.0
 #define kMonthsPerYear 12
+#define kElectricRate 0.15
 
 
 @implementation Appliance
@@ -31,20 +32,31 @@
     [super dealloc];
 }
 
-- (double)monthlyCost:(double)electricRate {
-    
+//- (double)monthlyCost:(double)electricRate {
+//    
+//    if (minutesPerDay != 0.0)
+//        hoursPerDay = minutesPerDay / 60.0;
+//    
+//    return powerRating / kWattsPerKiloWatt * hoursPerDay * kDaysPerMonth * electricRate;
+//}
+//- (double)annualCost:(double)electricRate 
+//         givenMonths:(double)months {
+//    
+//    if (months == 0)
+//        months = kMonthsPerYear;
+//    
+//    return [self monthlyCost:electricRate] * months;
+//}
+
+- (double)monthlyCost {
     if (minutesPerDay != 0.0)
         hoursPerDay = minutesPerDay / 60.0;
     
-    return powerRating / kWattsPerKiloWatt * hoursPerDay * kDaysPerMonth * electricRate;
+    return powerRating / kWattsPerKiloWatt * hoursPerDay * kDaysPerMonth * kElectricRate;
 }
-- (double)annualCost:(double)electricRate 
-         givenMonths:(double)months {
-    
-    if (months == 0)
-        months = kMonthsPerYear;
-    
-    return [self monthlyCost:electricRate] * months;
+
+- (double)annualCost {
+    return [self monthlyCost] * monthsPerYear;
 }
 
 @end

@@ -29,8 +29,11 @@
 @property double hoursPerDay;
 @property double monthsPerYear;
 
-- (double)monthlyCost:(double)electricRate; // Cost per month given price of electricity per kiloWatt*hour in dollars
-- (double)annualCost:(double)electricRate
-         givenMonths:(double)months; // Cost per year given price of electricity per kiloWatt*hour in dollars
+//- (double)monthlyCost:(double)electricRate; // Cost per month given price of electricity per kiloWatt*hour in dollars
+//- (double)annualCost:(double)electricRate
+//         givenMonths:(double)months; // Cost per year given price of electricity per kiloWatt*hour in dollars
+
+@property (readonly) double monthlyCost;
+@property (readonly) double annualCost;
 
 @end
