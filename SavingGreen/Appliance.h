@@ -14,10 +14,16 @@
     NSString *name;
     
     double powerRating; // in Watts
-    int numberOfAppliances;
-    double minutesPerDay;
+    int numberOfAppliances; // Default is 1
     double hoursPerDay;
     double monthsPerYear;
+    
+    // Other ways of calculations
+    
+    double minutesPerDay;
+    double minutesPerEvent; // per load, etc.
+    double eventsPerWeek;
+    double efficiency; // Default is 1.00
 @private
     
 }
@@ -28,6 +34,10 @@
 @property double minutesPerDay;
 @property double hoursPerDay;
 @property double monthsPerYear;
+@property double minutesPerEvent;
+@property double eventsPerWeek;
+@property double efficiency;
+
 
 //- (double)monthlyCost:(double)electricRate; // Cost per month given price of electricity per kiloWatt*hour in dollars
 //- (double)annualCost:(double)electricRate

@@ -11,17 +11,20 @@
 #define kWattsPerKiloWatt 1000.0
 #define kMonthsPerYear 12
 #define kElectricRate 0.15
+#define kWeeksPerMonth 4.5
+#define kMinutesPerHour 60.0
 
 
 @implementation Appliance
 
-@synthesize name, powerRating, numberOfAppliances, minutesPerDay, hoursPerDay, monthsPerYear;
+@synthesize name, powerRating, numberOfAppliances, minutesPerDay, hoursPerDay, monthsPerYear,minutesPerEvent, eventsPerWeek, efficiency;
 
 - (id)init
 {
     self = [super init];
     if (self) {
-        // Initialization code here.
+        self.numberOfAppliances = 1;
+        self.efficiency = 1.00;
     }
     
     return self;
@@ -49,16 +52,24 @@
 //}
 
 - (double)monthlyCost {
-    if (minutesPerDay != 0.0)
+    
+    double result = 0.0;
+    
+    if (eventsPerWeek != 0.0) {
+        result = powerRating / kWattsPerKiloWatt * minutesPerEvent / kMinutesPerHour * eventsPerWeek * kWeeksPerMonth *kElectricRate * numberOfAppliances;
+    }
+    else if (minutesPerDay != 0.0)
+    {
         hoursPerDay = minutesPerDay / 60.0;
-
-    double result = powerRating / kWattsPerKiloWatt * hoursPerDay * kDaysPerMonth * kElectricRate * numberOfAppliances;
+        result = powerRating / kWattsPerKiloWatt * hoursPerDay * kDaysPerMonth * kElectricRate * numberOfAppliances;
+    }
+    else
+        result = powerRating / kWattsPerKiloWatt * hoursPerDay * kDaysPerMonth * kElectricRate * numberOfAppliances;
 
     return result;
 }
 
 - (double)annualCost {
-    NSLog(@"Months per Year: %f", monthsPerYear);
     return [self monthlyCost] * monthsPerYear;
 }
 
