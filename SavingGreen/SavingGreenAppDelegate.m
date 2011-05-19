@@ -21,6 +21,14 @@
     transitVC = [[TransitVC alloc] initWithNibName:@"TransitVC" bundle:nil];
     
     [mainView addSubview:hotColdVC.view];
+    
+//    Appliance *app = [[Appliance alloc] init];
+//    app.powerRating = 500.0;
+//    app.numberOfAppliances = 2;
+//    app.minutesPerDay = 40;
+//    app.monthsPerYear = 6;
+//    
+//    NSLog(@"Monthly Cost:%f, Annual Cost:%f", [app monthlyCost:0.15], [app annualCost:0.15 givenMonths:4]);
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
