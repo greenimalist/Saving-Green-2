@@ -18,6 +18,8 @@
 @synthesize perKWH;
 @synthesize perTherm;
 
+@synthesize arrayOfVCs;
+
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -28,22 +30,21 @@
     self.perKWH = 0.15;
     self.perTherm = 1.30;
     
-    hotColdVC = [[HotColdVC alloc] initWithNibName:@"HotColdVC" bundle:nil];    
+    hotColdVC = [[HotColdVC alloc] initWithNibName:@"HotColdVC" bundle:nil]; 
+    hotColdVC.title = @"Heating & Cooling";
     kitchenVC = [[KitchenVC alloc] initWithNibName:@"KitchenVC" bundle:nil];
+    kitchenVC.title = @"Kitchen";
     electronicsVC = [[ElectronicsVC alloc] initWithNibName:@"ElectronicsVC" bundle:nil];
+    electronicsVC.title = @"Electronics";
     lightingVC = [[LightingVC alloc] initWithNibName:@"LightingVC" bundle:nil];
+    lightingVC.title = @"Lighting";
     transitVC = [[TransitVC alloc] initWithNibName:@"TransitVC" bundle:nil];
+    transitVC.title = @"Transit";
+    
+    arrayOfVCs = [[NSArray alloc] initWithObjects:hotColdVC, kitchenVC, electronicsVC, lightingVC, transitVC, nil];
     
     [mainScrollView setDocumentView:hotColdVC.view];
-    
-    
-//    Appliance *app = [[Appliance alloc] init];
-//    app.powerRating = 500.0;
-//    app.numberOfAppliances = 2;
-//    app.minutesPerDay = 40;
-//    app.monthsPerYear = 6;
-//    
-//    NSLog(@"Monthly Cost:%f, Annual Cost:%f", [app monthlyCost:0.15], [app annualCost:0.15 givenMonths:4]);
+    [sidebar reloadData];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -56,67 +57,28 @@
     [electronicsVC release];
     [lightingVC release];
     [transitVC release];
+    [arrayOfVCs release];
     [super dealloc];
 }
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView {
-    return 5;
+    return [arrayOfVCs count];
 }
 
 - (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
-    
-    NSString *cellString = @"";
-    
-    switch (rowIndex) {
-        case 0:
-            cellString = @"Heating & Cooling";
-            break;
-        case 1:
-            cellString = @"Kitchen";
-            break;
-        case 2:
-            cellString = @"Electronics";
-            break;
-        case 3:
-            cellString = @"Lighting";
-            break;
-        case 4:
-            cellString = @"Transit";
-            break;
-        default:
-            break;
-    }
-    
-    return cellString;
+
+    NSString *result = [(NSViewController *)[arrayOfVCs objectAtIndex:rowIndex] title];
+    return result;
 }
 
 - (void)tableView:(NSTableView *)aTableView willDisplayCell:(id)aCell forTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
     
-    NSView *newView = hotColdVC.view;
+    NSView *newView = [[arrayOfVCs objectAtIndex:rowIndex] view];
     
-    switch (rowIndex) {
-        case 0:
-            newView = hotColdVC.view;    
-            break;
-        case 1:
-            newView = kitchenVC.view;
-            break;
-        case 2:
-            newView = electronicsVC.view;
-            break;
-        case 3:
-            newView = lightingVC.view;
-            break;
-        case 4:
-            newView = transitVC.view;
-            break;
-        default:
-            break;
-    }
+    NSPoint topLeft = NSMakePoint(0.0,NSMaxY([[mainScrollView documentView] frame])-NSHeight([[mainScrollView contentView] bounds]));
     
     [mainScrollView setDocumentView: newView];
-//    NSPoint topLeft = NSMakePoint(0, newView.frame.size.height);
-//    [[mainScrollView contentView] scrollToPoint:topLeft];
+    [[mainScrollView contentView] scrollToPoint:topLeft];
 }
 
 - (void)setValue:(id)value forKey:(NSString *)key {

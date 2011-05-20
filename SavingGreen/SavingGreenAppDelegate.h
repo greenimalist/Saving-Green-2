@@ -20,6 +20,8 @@
     ElectronicsVC *electronicsVC;
     LightingVC *lightingVC;
     TransitVC *transitVC;
+    
+    NSArray *arrayOfVCs;
     IBOutlet NSScrollView *mainScrollView;
     
     int perGallonInCents;
@@ -32,9 +34,11 @@
 
 @private
     NSWindow *window;
+    IBOutlet NSTableView *sidebar;
 }
 
 @property (assign) IBOutlet NSWindow *window;
+@property (retain) NSArray *arrayOfVCs;
 
 @property int perGallonInCents;
 @property int perKWHInCents;
