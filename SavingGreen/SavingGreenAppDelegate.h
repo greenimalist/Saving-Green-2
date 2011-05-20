@@ -20,7 +20,7 @@
     ElectronicsVC *electronicsVC;
     LightingVC *lightingVC;
     TransitVC *transitVC;
-    IBOutlet NSView *mainView;
+    IBOutlet NSScrollView *mainScrollView;
 
 @private
     NSWindow *window;

@@ -20,7 +20,7 @@
     lightingVC = [[LightingVC alloc] initWithNibName:@"LightingVC" bundle:nil];
     transitVC = [[TransitVC alloc] initWithNibName:@"TransitVC" bundle:nil];
     
-    [mainView addSubview:hotColdVC.view];
+    [mainScrollView setDocumentView:hotColdVC.view];
     
 //    Appliance *app = [[Appliance alloc] init];
 //    app.powerRating = 500.0;
@@ -77,8 +77,6 @@
 
 - (void)tableView:(NSTableView *)aTableView willDisplayCell:(id)aCell forTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
     
-    [[[mainView subviews] lastObject] removeFromSuperview];
-
     NSView *newView = hotColdVC.view;
     
     switch (rowIndex) {
@@ -101,7 +99,7 @@
             break;
     }
     
-    [mainView addSubview:newView];
+    [mainScrollView setDocumentView: newView];
 }
 
 @end
