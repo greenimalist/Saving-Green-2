@@ -44,5 +44,64 @@
     [super dealloc];
 }
 
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView {
+    return 5;
+}
+
+- (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
+    
+    NSString *cellString = @"";
+    
+    switch (rowIndex) {
+        case 0:
+            cellString = @"Heating & Cooling";
+            break;
+        case 1:
+            cellString = @"Kitchen";
+            break;
+        case 2:
+            cellString = @"Electronics";
+            break;
+        case 3:
+            cellString = @"Lighting";
+            break;
+        case 4:
+            cellString = @"Transit";
+            break;
+        default:
+            break;
+    }
+    
+    return cellString;
+}
+
+- (void)tableView:(NSTableView *)aTableView willDisplayCell:(id)aCell forTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
+    
+    [[[mainView subviews] lastObject] removeFromSuperview];
+
+    NSView *newView = hotColdVC.view;
+    
+    switch (rowIndex) {
+        case 0:
+            newView = hotColdVC.view;    
+            break;
+        case 1:
+            newView = kitchenVC.view;
+            break;
+        case 2:
+            newView = electronicsVC.view;
+            break;
+        case 3:
+            newView = lightingVC.view;
+            break;
+        case 4:
+            newView = transitVC.view;
+            break;
+        default:
+            break;
+    }
+    
+    [mainView addSubview:newView];
+}
 
 @end
