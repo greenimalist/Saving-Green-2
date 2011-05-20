@@ -18,6 +18,8 @@
 @implementation Appliance
 
 @synthesize name, powerRating, numberOfAppliances, minutesPerDay, hoursPerDay, monthsPerYear,minutesPerEvent, eventsPerWeek, efficiency;
+//@synthesize perGallon, perKWH, perTherm;
+
 
 - (id)init
 {
@@ -25,6 +27,11 @@
     if (self) {
         self.numberOfAppliances = 1;
         self.efficiency = 1.00;
+        
+//        @property int perGallonInCents;
+//        @property int perKWHInCents;
+//        @property int perThermInCents;
+
     }
     
     return self;
@@ -56,7 +63,7 @@
     double result = 0.0;
     
     if (eventsPerWeek != 0.0) {
-        result = powerRating / kWattsPerKiloWatt * minutesPerEvent / kMinutesPerHour * eventsPerWeek * kWeeksPerMonth *kElectricRate * numberOfAppliances;
+        result = powerRating / kWattsPerKiloWatt * minutesPerEvent / kMinutesPerHour * eventsPerWeek * kWeeksPerMonth * kElectricRate * numberOfAppliances;
     }
     else if (minutesPerDay != 0.0)
     {
@@ -82,5 +89,17 @@
     [self didChangeValueForKey:@"monthlyCost"];
     [self didChangeValueForKey:@"annualCost"];
 }
+
+//- (double)perGallon {
+//    return [[NSUserDefaults standardUserDefaults] doubleForKey:@"perGallon"];
+//}
+//
+//- (double)perKWH {
+//    return [[NSUserDefaults standardUserDefaults] doubleForKey:@"perKWH"];
+//}
+//
+//- (double)perTherm {
+//    return [[NSUserDefaults standardUserDefaults] doubleForKey:@"perTherm"];    
+//}
 
 @end

@@ -24,6 +24,11 @@
     double minutesPerEvent; // per load, etc.
     double eventsPerWeek;
     double efficiency; // Default is 1.00
+    
+    double perGallon;
+    double perKWH;
+    double perTherm;
+
 @private
     
 }
@@ -37,6 +42,10 @@
 @property double minutesPerEvent;
 @property double eventsPerWeek;
 @property double efficiency;
+
+//@property (readonly) double perGallon;
+//@property (readonly) double perKWH;
+//@property (readonly) double perTherm;
 
 
 //- (double)monthlyCost:(double)electricRate; // Cost per month given price of electricity per kiloWatt*hour in dollars

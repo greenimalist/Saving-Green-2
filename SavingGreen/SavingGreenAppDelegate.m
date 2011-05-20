@@ -11,9 +11,23 @@
 @implementation SavingGreenAppDelegate
 
 @synthesize window;
+@synthesize perGallonInCents;
+@synthesize perKWHInCents;
+@synthesize perThermInCents;
+@synthesize perGallon;
+@synthesize perKWH;
+@synthesize perTherm;
+
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    self.perGallonInCents = 425;
+    self.perKWHInCents = 15;
+    self.perThermInCents = 130;
+    self.perGallon = 4.25;
+    self.perKWH = 0.15;
+    self.perTherm = 1.30;
+    
     hotColdVC = [[HotColdVC alloc] initWithNibName:@"HotColdVC" bundle:nil];    
     kitchenVC = [[KitchenVC alloc] initWithNibName:@"KitchenVC" bundle:nil];
     electronicsVC = [[ElectronicsVC alloc] initWithNibName:@"ElectronicsVC" bundle:nil];
@@ -21,6 +35,7 @@
     transitVC = [[TransitVC alloc] initWithNibName:@"TransitVC" bundle:nil];
     
     [mainScrollView setDocumentView:hotColdVC.view];
+    
     
 //    Appliance *app = [[Appliance alloc] init];
 //    app.powerRating = 500.0;
@@ -100,6 +115,24 @@
     }
     
     [mainScrollView setDocumentView: newView];
+//    NSPoint topLeft = NSMakePoint(0, newView.frame.size.height);
+//    [[mainScrollView contentView] scrollToPoint:topLeft];
 }
+
+- (void)setValue:(id)value forKey:(NSString *)key {
+    
+    [super setValue:value forKey:key];
+    
+    NSString *newKey = [key stringByReplacingOccurrencesOfString:@"InCents" withString:@""];
+    NSNumber *newValue = [NSNumber numberWithDouble:[value intValue]/100.0];
+    [super setValue:newValue forKey:newKey];
+    
+    NSLog(@"Key: %@, Value: %@", newKey, newValue);
+    
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//    [defaults setDouble:[newValue doubleValue] forKey:newKey];
+    
+}
+
 
 @end
