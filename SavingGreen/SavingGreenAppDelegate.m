@@ -45,6 +45,23 @@
     
     [mainScrollView setDocumentView:hotColdVC.view];
     [sidebar reloadData];
+    
+//    NSTextAttachment *attachment = [[[NSTextAttachment alloc] init] autorelease];
+//    id <NSTextAttachmentCell> cell = [attachment attachmentCell];
+//    
+//    NSString *iconPath = [[NSBundle mainBundle] pathForResource:@"car icon" ofType:@"png"];
+//    NSImage *icon = [[[NSImage alloc] initWithContentsOfFile:iconPath] autorelease]; // or wherever you are getting your image
+//    [cell setImage: icon];
+//    
+//    NSString *name = [self name];
+//    NSAttributedString *attrname;
+//    attrname = [[NSAttributedString alloc] initWithString: name];
+//    
+//    NSMutableAttributedString *prettyName;
+//    prettyName = (id)[NSMutableAttributedString attributedStringWithAttachment:
+//                      attachment]; // cast to quiet compiler warning
+//    [prettyName appendAttributedString: attrname];
+
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
