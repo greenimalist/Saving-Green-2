@@ -137,5 +137,11 @@
     
 }
 
+// Split View Delegate Methods
+
+- (BOOL)splitView:(NSSplitView *)splitView
+shouldAdjustSizeOfSubview:(NSView *)subview {
+    return NO;
+}
 
 @end
