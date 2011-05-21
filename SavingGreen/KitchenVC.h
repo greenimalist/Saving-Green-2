@@ -7,9 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "CategoryVC.h"
 
 
-@interface KitchenVC : NSViewController {
+@interface KitchenVC : CategoryVC {
 @private
     
 }

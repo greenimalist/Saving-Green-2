@@ -7,9 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "CategoryVC.h"
 
 
-@interface LightingVC : NSViewController {
+@interface LightingVC : CategoryVC {
 @private
     
 }

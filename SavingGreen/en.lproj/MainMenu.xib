@@ -16,11 +16,13 @@
 			<string>NSLevelIndicatorCell</string>
 			<string>NSSplitView</string>
 			<string>NSUserDefaultsController</string>
+			<string>NSButton</string>
 			<string>NSMenu</string>
 			<string>NSWindowTemplate</string>
 			<string>NSScrollView</string>
 			<string>NSMenuItem</string>
 			<string>NSPopUpButtonCell</string>
+			<string>NSButtonCell</string>
 			<string>NSLevelIndicator</string>
 			<string>NSCustomView</string>
 			<string>NSToolbarFlexibleSpaceItem</string>
@@ -1358,6 +1360,7 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>2CC1CAF0-893C-4430-B7C2-B004B6612BED</string>
+							<string>BEFD17FD-BD2B-41F8-88A7-DDAD7B9470E4</string>
 							<string>C700FE43-03DF-4318-BB85-0E511E32A60D</string>
 							<string>DBED07A9-001F-44EA-86AF-9995947A2EC4</string>
 							<string>NSToolbarCustomizeToolbarItem</string>
@@ -1477,7 +1480,7 @@
 													<int key="NSTag">20</int>
 													<reference key="NSTarget" ref="1056064098"/>
 												</object>
-												<object class="NSMenuItem" id="1042905241">
+												<object class="NSMenuItem" id="69403172">
 													<reference key="NSMenu" ref="626008057"/>
 													<string key="NSTitle">0.19</string>
 													<string key="NSKeyEquiv"/>
@@ -1489,7 +1492,7 @@
 													<int key="NSTag">19</int>
 													<reference key="NSTarget" ref="1056064098"/>
 												</object>
-												<object class="NSMenuItem" id="812187605">
+												<object class="NSMenuItem" id="571962896">
 													<reference key="NSMenu" ref="626008057"/>
 													<string key="NSTitle">0.18</string>
 													<string key="NSKeyEquiv"/>
@@ -1574,7 +1577,7 @@
 													<int key="NSTag">12</int>
 													<reference key="NSTarget" ref="1056064098"/>
 												</object>
-												<object class="NSMenuItem" id="620701754">
+												<object class="NSMenuItem" id="792338292">
 													<reference key="NSMenu" ref="626008057"/>
 													<string key="NSTitle">0.11</string>
 													<string key="NSKeyEquiv"/>
@@ -1586,7 +1589,7 @@
 													<int key="NSTag">11</int>
 													<reference key="NSTarget" ref="1056064098"/>
 												</object>
-												<object class="NSMenuItem" id="542858969">
+												<object class="NSMenuItem" id="734220199">
 													<reference key="NSMenu" ref="626008057"/>
 													<string key="NSTitle">0.10</string>
 													<string key="NSKeyEquiv"/>
@@ -1598,7 +1601,7 @@
 													<int key="NSTag">10</int>
 													<reference key="NSTarget" ref="1056064098"/>
 												</object>
-												<object class="NSMenuItem" id="354527328">
+												<object class="NSMenuItem" id="772327521">
 													<reference key="NSMenu" ref="626008057"/>
 													<string key="NSTitle">0.09</string>
 													<string key="NSKeyEquiv"/>
@@ -1610,7 +1613,7 @@
 													<int key="NSTag">9</int>
 													<reference key="NSTarget" ref="1056064098"/>
 												</object>
-												<object class="NSMenuItem" id="913048062">
+												<object class="NSMenuItem" id="616216554">
 													<reference key="NSMenu" ref="626008057"/>
 													<string key="NSTitle">0.08</string>
 													<string key="NSKeyEquiv"/>
@@ -1622,7 +1625,7 @@
 													<int key="NSTag">8</int>
 													<reference key="NSTarget" ref="1056064098"/>
 												</object>
-												<object class="NSMenuItem" id="919728691">
+												<object class="NSMenuItem" id="401924600">
 													<reference key="NSMenu" ref="626008057"/>
 													<string key="NSTitle">0.07</string>
 													<string key="NSKeyEquiv"/>
@@ -1634,7 +1637,7 @@
 													<int key="NSTag">7</int>
 													<reference key="NSTarget" ref="1056064098"/>
 												</object>
-												<object class="NSMenuItem" id="350860640">
+												<object class="NSMenuItem" id="982736271">
 													<reference key="NSMenu" ref="626008057"/>
 													<string key="NSTitle">0.06</string>
 													<string key="NSKeyEquiv"/>
@@ -1646,7 +1649,7 @@
 													<int key="NSTag">6</int>
 													<reference key="NSTarget" ref="1056064098"/>
 												</object>
-												<object class="NSMenuItem" id="483880309">
+												<object class="NSMenuItem" id="290816263">
 													<reference key="NSMenu" ref="626008057"/>
 													<string key="NSTitle">0.05</string>
 													<string key="NSKeyEquiv"/>
@@ -1658,7 +1661,7 @@
 													<int key="NSTag">5</int>
 													<reference key="NSTarget" ref="1056064098"/>
 												</object>
-												<object class="NSMenuItem" id="746237683">
+												<object class="NSMenuItem" id="995505348">
 													<reference key="NSMenu" ref="626008057"/>
 													<string key="NSTitle">0.00</string>
 													<string key="NSKeyEquiv"/>
@@ -1684,6 +1687,44 @@
 								<nil key="NSToolbarItemAction"/>
 								<string key="NSToolbarItemMinSize">{60, 25}</string>
 								<string key="NSToolbarItemMaxSize">{100, 25}</string>
+								<bool key="NSToolbarItemEnabled">YES</bool>
+								<bool key="NSToolbarItemAutovalidates">YES</bool>
+								<int key="NSToolbarItemTag">0</int>
+								<bool key="NSToolbarIsUserRemovable">YES</bool>
+								<int key="NSToolbarItemVisibilityPriority">0</int>
+							</object>
+							<object class="NSToolbarItem" id="602437316">
+								<object class="NSMutableString" key="NSToolbarItemIdentifier">
+									<characters key="NS.bytes">BEFD17FD-BD2B-41F8-88A7-DDAD7B9470E4</characters>
+								</object>
+								<string key="NSToolbarItemLabel">Custom View</string>
+								<string key="NSToolbarItemPaletteLabel">Custom View</string>
+								<nil key="NSToolbarItemToolTip"/>
+								<object class="NSButton" key="NSToolbarItemView" id="463578083">
+									<reference key="NSNextResponder"/>
+									<int key="NSvFlags">268</int>
+									<string key="NSFrame">{{26, 14}, {25, 25}}</string>
+									<reference key="NSSuperview"/>
+									<bool key="NSEnabled">YES</bool>
+									<object class="NSButtonCell" key="NSCell" id="949662113">
+										<int key="NSCellFlags">67239424</int>
+										<int key="NSCellFlags2">134217728</int>
+										<string key="NSContents"/>
+										<reference key="NSSupport" ref="112145131"/>
+										<reference key="NSControlView" ref="463578083"/>
+										<int key="NSButtonFlags">-2038415105</int>
+										<int key="NSButtonFlags2">161</int>
+										<string key="NSAlternateContents"/>
+										<string key="NSKeyEquivalent"/>
+										<int key="NSPeriodicDelay">200</int>
+										<int key="NSPeriodicInterval">25</int>
+									</object>
+								</object>
+								<nil key="NSToolbarItemImage"/>
+								<nil key="NSToolbarItemTarget"/>
+								<nil key="NSToolbarItemAction"/>
+								<string key="NSToolbarItemMinSize">{25, 25}</string>
+								<string key="NSToolbarItemMaxSize">{25, 25}</string>
 								<bool key="NSToolbarItemEnabled">YES</bool>
 								<bool key="NSToolbarItemAutovalidates">YES</bool>
 								<int key="NSToolbarItemTag">0</int>
@@ -1733,7 +1774,7 @@
 											<string key="NSTitle">OtherViews</string>
 											<object class="NSMutableArray" key="NSMenuItems">
 												<bool key="EncodedWithXMLCoder">YES</bool>
-												<object class="NSMenuItem" id="79852541">
+												<object class="NSMenuItem" id="486019859">
 													<reference key="NSMenu" ref="204858976"/>
 													<string key="NSTitle">6.25</string>
 													<string key="NSKeyEquiv"/>
@@ -1745,7 +1786,7 @@
 													<int key="NSTag">625</int>
 													<reference key="NSTarget" ref="529208558"/>
 												</object>
-												<object class="NSMenuItem" id="105120751">
+												<object class="NSMenuItem" id="147192020">
 													<reference key="NSMenu" ref="204858976"/>
 													<string key="NSTitle">6.00</string>
 													<string key="NSKeyEquiv"/>
@@ -1757,7 +1798,7 @@
 													<int key="NSTag">600</int>
 													<reference key="NSTarget" ref="529208558"/>
 												</object>
-												<object class="NSMenuItem" id="482091626">
+												<object class="NSMenuItem" id="546315120">
 													<reference key="NSMenu" ref="204858976"/>
 													<string key="NSTitle">5.75</string>
 													<string key="NSKeyEquiv"/>
@@ -1769,7 +1810,7 @@
 													<int key="NSTag">575</int>
 													<reference key="NSTarget" ref="529208558"/>
 												</object>
-												<object class="NSMenuItem" id="388776200">
+												<object class="NSMenuItem" id="674940312">
 													<reference key="NSMenu" ref="204858976"/>
 													<string key="NSTitle">5.50</string>
 													<string key="NSKeyEquiv"/>
@@ -1781,7 +1822,7 @@
 													<int key="NSTag">550</int>
 													<reference key="NSTarget" ref="529208558"/>
 												</object>
-												<object class="NSMenuItem" id="443607635">
+												<object class="NSMenuItem" id="725226031">
 													<reference key="NSMenu" ref="204858976"/>
 													<string key="NSTitle">5.25</string>
 													<string key="NSKeyEquiv"/>
@@ -1902,7 +1943,7 @@
 													<int key="NSTag">275</int>
 													<reference key="NSTarget" ref="529208558"/>
 												</object>
-												<object class="NSMenuItem" id="860719129">
+												<object class="NSMenuItem" id="398100546">
 													<reference key="NSMenu" ref="204858976"/>
 													<string key="NSTitle">2.50</string>
 													<string key="NSKeyEquiv"/>
@@ -1914,7 +1955,7 @@
 													<int key="NSTag">250</int>
 													<reference key="NSTarget" ref="529208558"/>
 												</object>
-												<object class="NSMenuItem" id="430342574">
+												<object class="NSMenuItem" id="819396674">
 													<reference key="NSMenu" ref="204858976"/>
 													<string key="NSTitle">2.25</string>
 													<string key="NSKeyEquiv"/>
@@ -1926,7 +1967,7 @@
 													<int key="NSTag">225</int>
 													<reference key="NSTarget" ref="529208558"/>
 												</object>
-												<object class="NSMenuItem" id="628300747">
+												<object class="NSMenuItem" id="704922351">
 													<reference key="NSMenu" ref="204858976"/>
 													<string key="NSTitle">2.00</string>
 													<string key="NSKeyEquiv"/>
@@ -1938,7 +1979,7 @@
 													<int key="NSTag">200</int>
 													<reference key="NSTarget" ref="529208558"/>
 												</object>
-												<object class="NSMenuItem" id="1042327803">
+												<object class="NSMenuItem" id="555950718">
 													<reference key="NSMenu" ref="204858976"/>
 													<string key="NSTitle">1.75</string>
 													<string key="NSKeyEquiv"/>
@@ -1950,7 +1991,7 @@
 													<int key="NSTag">175</int>
 													<reference key="NSTarget" ref="529208558"/>
 												</object>
-												<object class="NSMenuItem" id="271975674">
+												<object class="NSMenuItem" id="978682334">
 													<reference key="NSMenu" ref="204858976"/>
 													<string key="NSTitle">1.50</string>
 													<string key="NSKeyEquiv"/>
@@ -2050,7 +2091,7 @@
 													<int key="NSTag">300</int>
 													<reference key="NSTarget" ref="473578287"/>
 												</object>
-												<object class="NSMenuItem" id="562992730">
+												<object class="NSMenuItem" id="664537485">
 													<reference key="NSMenu" ref="135401210"/>
 													<string key="NSTitle">2.75</string>
 													<string key="NSKeyEquiv"/>
@@ -2062,7 +2103,7 @@
 													<int key="NSTag">275</int>
 													<reference key="NSTarget" ref="473578287"/>
 												</object>
-												<object class="NSMenuItem" id="584057948">
+												<object class="NSMenuItem" id="754393347">
 													<reference key="NSMenu" ref="135401210"/>
 													<string key="NSTitle">2.50</string>
 													<string key="NSKeyEquiv"/>
@@ -2074,7 +2115,7 @@
 													<int key="NSTag">250</int>
 													<reference key="NSTarget" ref="473578287"/>
 												</object>
-												<object class="NSMenuItem" id="450249587">
+												<object class="NSMenuItem" id="245130431">
 													<reference key="NSMenu" ref="135401210"/>
 													<string key="NSTitle">2.25</string>
 													<string key="NSKeyEquiv"/>
@@ -2086,7 +2127,7 @@
 													<int key="NSTag">225</int>
 													<reference key="NSTarget" ref="473578287"/>
 												</object>
-												<object class="NSMenuItem" id="331953501">
+												<object class="NSMenuItem" id="423164694">
 													<reference key="NSMenu" ref="135401210"/>
 													<string key="NSTitle">2.00</string>
 													<string key="NSKeyEquiv"/>
@@ -2098,7 +2139,7 @@
 													<int key="NSTag">200</int>
 													<reference key="NSTarget" ref="473578287"/>
 												</object>
-												<object class="NSMenuItem" id="389079871">
+												<object class="NSMenuItem" id="554310371">
 													<reference key="NSMenu" ref="135401210"/>
 													<string key="NSTitle">1.90</string>
 													<string key="NSKeyEquiv"/>
@@ -2110,7 +2151,7 @@
 													<int key="NSTag">190</int>
 													<reference key="NSTarget" ref="473578287"/>
 												</object>
-												<object class="NSMenuItem" id="1060528975">
+												<object class="NSMenuItem" id="806297792">
 													<reference key="NSMenu" ref="135401210"/>
 													<string key="NSTitle">1.80</string>
 													<string key="NSKeyEquiv"/>
@@ -2122,7 +2163,7 @@
 													<int key="NSTag">180</int>
 													<reference key="NSTarget" ref="473578287"/>
 												</object>
-												<object class="NSMenuItem" id="239621847">
+												<object class="NSMenuItem" id="847566747">
 													<reference key="NSMenu" ref="135401210"/>
 													<string key="NSTitle">1.70</string>
 													<string key="NSKeyEquiv"/>
@@ -2134,7 +2175,7 @@
 													<int key="NSTag">170</int>
 													<reference key="NSTarget" ref="473578287"/>
 												</object>
-												<object class="NSMenuItem" id="122773152">
+												<object class="NSMenuItem" id="1059807686">
 													<reference key="NSMenu" ref="135401210"/>
 													<string key="NSTitle">1.60</string>
 													<string key="NSKeyEquiv"/>
@@ -2146,7 +2187,7 @@
 													<int key="NSTag">160</int>
 													<reference key="NSTarget" ref="473578287"/>
 												</object>
-												<object class="NSMenuItem" id="1022135588">
+												<object class="NSMenuItem" id="668313018">
 													<reference key="NSMenu" ref="135401210"/>
 													<string key="NSTitle">1.50</string>
 													<string key="NSKeyEquiv"/>
@@ -2158,7 +2199,7 @@
 													<int key="NSTag">150</int>
 													<reference key="NSTarget" ref="473578287"/>
 												</object>
-												<object class="NSMenuItem" id="86744925">
+												<object class="NSMenuItem" id="752756631">
 													<reference key="NSMenu" ref="135401210"/>
 													<string key="NSTitle">1.40</string>
 													<string key="NSKeyEquiv"/>
@@ -2170,7 +2211,7 @@
 													<int key="NSTag">140</int>
 													<reference key="NSTarget" ref="473578287"/>
 												</object>
-												<object class="NSMenuItem" id="882484668">
+												<object class="NSMenuItem" id="76936083">
 													<reference key="NSMenu" ref="135401210"/>
 													<string key="NSTitle">1.30</string>
 													<string key="NSKeyEquiv"/>
@@ -2182,7 +2223,7 @@
 													<int key="NSTag">130</int>
 													<reference key="NSTarget" ref="473578287"/>
 												</object>
-												<object class="NSMenuItem" id="809110894">
+												<object class="NSMenuItem" id="1066412564">
 													<reference key="NSMenu" ref="135401210"/>
 													<string key="NSTitle">1.20</string>
 													<string key="NSKeyEquiv"/>
@@ -2194,7 +2235,7 @@
 													<int key="NSTag">120</int>
 													<reference key="NSTarget" ref="473578287"/>
 												</object>
-												<object class="NSMenuItem" id="517086499">
+												<object class="NSMenuItem" id="498409482">
 													<reference key="NSMenu" ref="135401210"/>
 													<string key="NSTitle">1.10</string>
 													<string key="NSKeyEquiv"/>
@@ -2206,7 +2247,7 @@
 													<int key="NSTag">110</int>
 													<reference key="NSTarget" ref="473578287"/>
 												</object>
-												<object class="NSMenuItem" id="437041592">
+												<object class="NSMenuItem" id="781857434">
 													<reference key="NSMenu" ref="135401210"/>
 													<string key="NSTitle">1.00</string>
 													<string key="NSKeyEquiv"/>
@@ -2218,7 +2259,7 @@
 													<int key="NSTag">100</int>
 													<reference key="NSTarget" ref="473578287"/>
 												</object>
-												<object class="NSMenuItem" id="777696873">
+												<object class="NSMenuItem" id="548619460">
 													<reference key="NSMenu" ref="135401210"/>
 													<string key="NSTitle">0.90</string>
 													<string key="NSKeyEquiv"/>
@@ -2230,7 +2271,7 @@
 													<int key="NSTag">90</int>
 													<reference key="NSTarget" ref="473578287"/>
 												</object>
-												<object class="NSMenuItem" id="789061173">
+												<object class="NSMenuItem" id="403347993">
 													<reference key="NSMenu" ref="135401210"/>
 													<string key="NSTitle">0.80</string>
 													<string key="NSKeyEquiv"/>
@@ -2242,7 +2283,7 @@
 													<int key="NSTag">80</int>
 													<reference key="NSTarget" ref="473578287"/>
 												</object>
-												<object class="NSMenuItem" id="516893134">
+												<object class="NSMenuItem" id="194133471">
 													<reference key="NSMenu" ref="135401210"/>
 													<string key="NSTitle">0.70</string>
 													<string key="NSKeyEquiv"/>
@@ -2450,11 +2491,13 @@
 						<reference ref="595076946"/>
 						<reference ref="682405760"/>
 						<reference ref="661385939"/>
+						<reference ref="602437316"/>
 					</object>
-					<object class="NSMutableArray" key="NSToolbarIBDefaultItems">
+					<object class="NSArray" key="NSToolbarIBDefaultItems">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<reference ref="630525393"/>
 						<reference ref="661385939"/>
+						<reference ref="602437316"/>
 						<reference ref="682405760"/>
 						<reference ref="1020993546"/>
 						<reference ref="250778743"/>
@@ -2692,7 +2735,7 @@
 																<object class="NSScroller" id="130954685">
 																	<reference key="NSNextResponder" ref="871244706"/>
 																	<int key="NSvFlags">256</int>
-																	<string key="NSFrame">{{685, 0}, {15, 553}}</string>
+																	<string key="NSFrame">{{685, 0}, {15, 516}}</string>
 																	<reference key="NSSuperview" ref="871244706"/>
 																	<reference key="NSWindow"/>
 																	<reference key="NSNextKeyView" ref="1020977866"/>
@@ -2933,7 +2976,7 @@
 			<object class="NSCustomObject" id="755631768">
 				<string key="NSClassName">NSFontManager</string>
 			</object>
-			<object class="NSUserDefaultsController" id="882816624">
+			<object class="NSUserDefaultsController" id="695810480">
 				<bool key="NSSharedInstance">YES</bool>
 			</object>
 		</object>
@@ -4785,6 +4828,7 @@
 							<reference ref="1020993546"/>
 							<reference ref="250778743"/>
 							<reference ref="931078351"/>
+							<reference ref="602437316"/>
 						</object>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -4860,16 +4904,16 @@
 							<reference ref="92305155"/>
 							<reference ref="551061959"/>
 							<reference ref="968634958"/>
-							<reference ref="860719129"/>
-							<reference ref="430342574"/>
-							<reference ref="628300747"/>
-							<reference ref="1042327803"/>
-							<reference ref="271975674"/>
-							<reference ref="79852541"/>
-							<reference ref="105120751"/>
-							<reference ref="482091626"/>
-							<reference ref="388776200"/>
-							<reference ref="443607635"/>
+							<reference ref="398100546"/>
+							<reference ref="819396674"/>
+							<reference ref="704922351"/>
+							<reference ref="555950718"/>
+							<reference ref="978682334"/>
+							<reference ref="486019859"/>
+							<reference ref="147192020"/>
+							<reference ref="546315120"/>
+							<reference ref="674940312"/>
+							<reference ref="725226031"/>
 						</object>
 						<reference key="parent" ref="529208558"/>
 					</object>
@@ -4935,16 +4979,16 @@
 							<reference ref="26606273"/>
 							<reference ref="508114095"/>
 							<reference ref="1022394521"/>
-							<reference ref="1042905241"/>
-							<reference ref="812187605"/>
-							<reference ref="620701754"/>
-							<reference ref="542858969"/>
-							<reference ref="354527328"/>
-							<reference ref="913048062"/>
-							<reference ref="919728691"/>
-							<reference ref="350860640"/>
-							<reference ref="483880309"/>
-							<reference ref="746237683"/>
+							<reference ref="69403172"/>
+							<reference ref="571962896"/>
+							<reference ref="792338292"/>
+							<reference ref="734220199"/>
+							<reference ref="772327521"/>
+							<reference ref="616216554"/>
+							<reference ref="401924600"/>
+							<reference ref="982736271"/>
+							<reference ref="290816263"/>
+							<reference ref="995505348"/>
 						</object>
 						<reference key="parent" ref="1056064098"/>
 					</object>
@@ -4996,23 +5040,23 @@
 							<reference ref="561144748"/>
 							<reference ref="1047598819"/>
 							<reference ref="758889840"/>
-							<reference ref="562992730"/>
-							<reference ref="584057948"/>
-							<reference ref="1060528975"/>
-							<reference ref="450249587"/>
-							<reference ref="331953501"/>
-							<reference ref="389079871"/>
-							<reference ref="239621847"/>
-							<reference ref="122773152"/>
-							<reference ref="1022135588"/>
-							<reference ref="86744925"/>
-							<reference ref="882484668"/>
-							<reference ref="809110894"/>
-							<reference ref="517086499"/>
-							<reference ref="437041592"/>
-							<reference ref="777696873"/>
-							<reference ref="789061173"/>
-							<reference ref="516893134"/>
+							<reference ref="664537485"/>
+							<reference ref="754393347"/>
+							<reference ref="806297792"/>
+							<reference ref="245130431"/>
+							<reference ref="423164694"/>
+							<reference ref="554310371"/>
+							<reference ref="847566747"/>
+							<reference ref="1059807686"/>
+							<reference ref="668313018"/>
+							<reference ref="752756631"/>
+							<reference ref="76936083"/>
+							<reference ref="1066412564"/>
+							<reference ref="498409482"/>
+							<reference ref="781857434"/>
+							<reference ref="548619460"/>
+							<reference ref="403347993"/>
+							<reference ref="194133471"/>
 						</object>
 						<reference key="parent" ref="473578287"/>
 					</object>
@@ -5371,230 +5415,253 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">699</int>
-						<reference key="object" ref="79852541"/>
+						<reference key="object" ref="486019859"/>
 						<reference key="parent" ref="204858976"/>
 						<string key="objectName">6.25</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">700</int>
-						<reference key="object" ref="105120751"/>
+						<reference key="object" ref="147192020"/>
 						<reference key="parent" ref="204858976"/>
 						<string key="objectName">6.00</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">701</int>
-						<reference key="object" ref="482091626"/>
+						<reference key="object" ref="546315120"/>
 						<reference key="parent" ref="204858976"/>
 						<string key="objectName">5.75</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">702</int>
-						<reference key="object" ref="388776200"/>
+						<reference key="object" ref="674940312"/>
 						<reference key="parent" ref="204858976"/>
 						<string key="objectName">5.50</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">703</int>
-						<reference key="object" ref="443607635"/>
+						<reference key="object" ref="725226031"/>
 						<reference key="parent" ref="204858976"/>
 						<string key="objectName">5.25</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">704</int>
-						<reference key="object" ref="860719129"/>
+						<reference key="object" ref="398100546"/>
 						<reference key="parent" ref="204858976"/>
 						<string key="objectName">2.50</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">705</int>
-						<reference key="object" ref="430342574"/>
+						<reference key="object" ref="819396674"/>
 						<reference key="parent" ref="204858976"/>
 						<string key="objectName">2.25</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">706</int>
-						<reference key="object" ref="628300747"/>
+						<reference key="object" ref="704922351"/>
 						<reference key="parent" ref="204858976"/>
 						<string key="objectName">2.00</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">707</int>
-						<reference key="object" ref="1042327803"/>
+						<reference key="object" ref="555950718"/>
 						<reference key="parent" ref="204858976"/>
 						<string key="objectName">1.75</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">708</int>
-						<reference key="object" ref="271975674"/>
+						<reference key="object" ref="978682334"/>
 						<reference key="parent" ref="204858976"/>
 						<string key="objectName">1.50</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">709</int>
-						<reference key="object" ref="1042905241"/>
+						<reference key="object" ref="69403172"/>
 						<reference key="parent" ref="626008057"/>
 						<string key="objectName">0.19</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">710</int>
-						<reference key="object" ref="812187605"/>
+						<reference key="object" ref="571962896"/>
 						<reference key="parent" ref="626008057"/>
 						<string key="objectName">0.18</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">711</int>
-						<reference key="object" ref="620701754"/>
+						<reference key="object" ref="792338292"/>
 						<reference key="parent" ref="626008057"/>
 						<string key="objectName">0.11</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">712</int>
-						<reference key="object" ref="542858969"/>
+						<reference key="object" ref="734220199"/>
 						<reference key="parent" ref="626008057"/>
 						<string key="objectName">0.10</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">713</int>
-						<reference key="object" ref="354527328"/>
+						<reference key="object" ref="772327521"/>
 						<reference key="parent" ref="626008057"/>
 						<string key="objectName">0.09</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">714</int>
-						<reference key="object" ref="913048062"/>
+						<reference key="object" ref="616216554"/>
 						<reference key="parent" ref="626008057"/>
 						<string key="objectName">0.08</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">715</int>
-						<reference key="object" ref="919728691"/>
+						<reference key="object" ref="401924600"/>
 						<reference key="parent" ref="626008057"/>
 						<string key="objectName">0.07</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">716</int>
-						<reference key="object" ref="350860640"/>
+						<reference key="object" ref="982736271"/>
 						<reference key="parent" ref="626008057"/>
 						<string key="objectName">0.06</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">717</int>
-						<reference key="object" ref="483880309"/>
+						<reference key="object" ref="290816263"/>
 						<reference key="parent" ref="626008057"/>
 						<string key="objectName">0.05</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">718</int>
-						<reference key="object" ref="746237683"/>
+						<reference key="object" ref="995505348"/>
 						<reference key="parent" ref="626008057"/>
 						<string key="objectName">0.00</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">719</int>
-						<reference key="object" ref="562992730"/>
+						<reference key="object" ref="664537485"/>
 						<reference key="parent" ref="135401210"/>
 						<string key="objectName">2.75</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">720</int>
-						<reference key="object" ref="584057948"/>
+						<reference key="object" ref="754393347"/>
 						<reference key="parent" ref="135401210"/>
 						<string key="objectName">2.50</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">721</int>
-						<reference key="object" ref="1060528975"/>
+						<reference key="object" ref="806297792"/>
 						<reference key="parent" ref="135401210"/>
 						<string key="objectName">1.80</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">722</int>
-						<reference key="object" ref="450249587"/>
+						<reference key="object" ref="245130431"/>
 						<reference key="parent" ref="135401210"/>
 						<string key="objectName">2.25</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">723</int>
-						<reference key="object" ref="331953501"/>
+						<reference key="object" ref="423164694"/>
 						<reference key="parent" ref="135401210"/>
 						<string key="objectName">2.00</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">724</int>
-						<reference key="object" ref="389079871"/>
+						<reference key="object" ref="554310371"/>
 						<reference key="parent" ref="135401210"/>
 						<string key="objectName">1.90</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">725</int>
-						<reference key="object" ref="239621847"/>
+						<reference key="object" ref="847566747"/>
 						<reference key="parent" ref="135401210"/>
 						<string key="objectName">1.70</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">726</int>
-						<reference key="object" ref="122773152"/>
+						<reference key="object" ref="1059807686"/>
 						<reference key="parent" ref="135401210"/>
 						<string key="objectName">1.60</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">727</int>
-						<reference key="object" ref="1022135588"/>
+						<reference key="object" ref="668313018"/>
 						<reference key="parent" ref="135401210"/>
 						<string key="objectName">1.50</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">728</int>
-						<reference key="object" ref="86744925"/>
+						<reference key="object" ref="752756631"/>
 						<reference key="parent" ref="135401210"/>
 						<string key="objectName">1.40</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">729</int>
-						<reference key="object" ref="882484668"/>
+						<reference key="object" ref="76936083"/>
 						<reference key="parent" ref="135401210"/>
 						<string key="objectName">1.30</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">730</int>
-						<reference key="object" ref="809110894"/>
+						<reference key="object" ref="1066412564"/>
 						<reference key="parent" ref="135401210"/>
 						<string key="objectName">1.20</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">731</int>
-						<reference key="object" ref="517086499"/>
+						<reference key="object" ref="498409482"/>
 						<reference key="parent" ref="135401210"/>
 						<string key="objectName">1.10</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">732</int>
-						<reference key="object" ref="437041592"/>
+						<reference key="object" ref="781857434"/>
 						<reference key="parent" ref="135401210"/>
 						<string key="objectName">1.00</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">733</int>
-						<reference key="object" ref="777696873"/>
+						<reference key="object" ref="548619460"/>
 						<reference key="parent" ref="135401210"/>
 						<string key="objectName">0.90</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">734</int>
-						<reference key="object" ref="789061173"/>
+						<reference key="object" ref="403347993"/>
 						<reference key="parent" ref="135401210"/>
 						<string key="objectName">0.80</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">735</int>
-						<reference key="object" ref="516893134"/>
+						<reference key="object" ref="194133471"/>
 						<reference key="parent" ref="135401210"/>
 						<string key="objectName">0.70</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">739</int>
-						<reference key="object" ref="882816624"/>
+						<reference key="object" ref="695810480"/>
 						<reference key="parent" ref="0"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">756</int>
+						<reference key="object" ref="602437316"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="463578083"/>
+						</object>
+						<reference key="parent" ref="925707509"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">754</int>
+						<reference key="object" ref="463578083"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="949662113"/>
+						</object>
+						<reference key="parent" ref="602437316"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">755</int>
+						<reference key="object" ref="949662113"/>
+						<reference key="parent" ref="463578083"/>
 					</object>
 				</object>
 			</object>
@@ -5948,6 +6015,8 @@
 					<string>74.ImportedFromIB2</string>
 					<string>75.IBPluginDependency</string>
 					<string>75.ImportedFromIB2</string>
+					<string>754.IBPluginDependency</string>
+					<string>755.IBPluginDependency</string>
 					<string>77.IBPluginDependency</string>
 					<string>77.ImportedFromIB2</string>
 					<string>78.IBPluginDependency</string>
@@ -6316,6 +6385,8 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
@@ -6347,7 +6418,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">753</int>
+			<int key="maxID">756</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

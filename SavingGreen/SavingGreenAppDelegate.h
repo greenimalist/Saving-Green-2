@@ -7,21 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "HotColdVC.h"
-#import "KitchenVC.h"
-#import "ElectronicsVC.h"
-#import "LightingVC.h"
-#import "TransitVC.h"
 
 @interface SavingGreenAppDelegate : NSObject <NSApplicationDelegate, NSTableViewDataSource, NSTableViewDelegate, NSSplitViewDelegate> {
-    
-    HotColdVC *hotColdVC;
-    KitchenVC *kitchenVC;
-    ElectronicsVC *electronicsVC;
-    LightingVC *lightingVC;
-    TransitVC *transitVC;
-    
-    NSArray *arrayOfVCs;
+        
+    NSArray *categoryVCs;
     IBOutlet NSScrollView *mainScrollView;
     
     int perGallonInCents;
@@ -35,12 +24,11 @@
     NSMutableArray *iconAttachments;
     
 @private
-    NSWindow *window;
+    IBOutlet NSWindow *window;
     IBOutlet NSTableView *sidebar;
 }
 
-@property (assign) IBOutlet NSWindow *window;
-@property (retain) NSArray *arrayOfVCs;
+@property (retain) NSArray *categoryVCs;
 
 @property int perGallonInCents;
 @property int perKWHInCents;

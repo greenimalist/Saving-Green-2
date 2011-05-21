@@ -8,8 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 #import "Appliance.h"
+#import "CategoryVC.h"
 
-@interface HotColdVC : NSViewController {
+@interface HotColdVC : CategoryVC {
     
     Appliance *heater;
     Appliance *cooler;

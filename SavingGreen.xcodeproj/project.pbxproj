@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0E63E1ED1384A3C100F59540 /* Appliance.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E63E1EC1384A3C100F59540 /* Appliance.m */; };
+		0E702F461387AFE500A01BBD /* TutorialVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E702F441387AFDF00A01BBD /* TutorialVC.m */; };
+		0E702F471387AFE500A01BBD /* TutorialVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E702F451387AFE200A01BBD /* TutorialVC.xib */; };
+		0E702F4B1387B19B00A01BBD /* CategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E702F491387B19200A01BBD /* CategoryVC.m */; };
+		0E702F4C1387B19B00A01BBD /* CategoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E702F4A1387B19500A01BBD /* CategoryVC.xib */; };
 		0E7AD855138528600019C5C2 /* transitIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AD84E138528600019C5C2 /* transitIcon.png */; };
 		0E7AD856138528600019C5C2 /* electronicsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AD84F138528600019C5C2 /* electronicsIcon.png */; };
 		0E7AD857138528600019C5C2 /* kitchenIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AD850138528600019C5C2 /* kitchenIcon.jpg */; };
@@ -50,6 +54,12 @@
 /* Begin PBXFileReference section */
 		0E63E1EB1384A3C100F59540 /* Appliance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appliance.h; sourceTree = "<group>"; };
 		0E63E1EC1384A3C100F59540 /* Appliance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appliance.m; sourceTree = "<group>"; };
+		0E702F431387AFDC00A01BBD /* TutorialVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialVC.h; sourceTree = "<group>"; };
+		0E702F441387AFDF00A01BBD /* TutorialVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialVC.m; sourceTree = "<group>"; };
+		0E702F451387AFE200A01BBD /* TutorialVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialVC.xib; sourceTree = "<group>"; };
+		0E702F481387B18F00A01BBD /* CategoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryVC.h; sourceTree = "<group>"; };
+		0E702F491387B19200A01BBD /* CategoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryVC.m; sourceTree = "<group>"; };
+		0E702F4A1387B19500A01BBD /* CategoryVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryVC.xib; sourceTree = "<group>"; };
 		0E7AD84E138528600019C5C2 /* transitIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transitIcon.png; sourceTree = "<group>"; };
 		0E7AD84F138528600019C5C2 /* electronicsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = electronicsIcon.png; sourceTree = "<group>"; };
 		0E7AD850138528600019C5C2 /* kitchenIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kitchenIcon.jpg; sourceTree = "<group>"; };
@@ -127,6 +137,38 @@
 			path = Icons;
 			sourceTree = "<group>";
 		};
+		0EB2B9901387B43E00F743BC /* CategoryVCs */ = {
+			isa = PBXGroup;
+			children = (
+				0E702F431387AFDC00A01BBD /* TutorialVC.h */,
+				0E702F441387AFDF00A01BBD /* TutorialVC.m */,
+				0E702F451387AFE200A01BBD /* TutorialVC.xib */,
+				0EB7DCB71384148600A198D7 /* HotColdVC.h */,
+				0EB7DCB81384148600A198D7 /* HotColdVC.m */,
+				0EB7DCB91384148600A198D7 /* HotColdVC.xib */,
+				0EB7DCBC1384149900A198D7 /* KitchenVC.h */,
+				0EB7DCBD1384149900A198D7 /* KitchenVC.m */,
+				0EB7DCBE1384149A00A198D7 /* KitchenVC.xib */,
+				0EB7DCCE138414FC00A198D7 /* ElectronicsVC.h */,
+				0EB7DCCF138414FC00A198D7 /* ElectronicsVC.m */,
+				0EB7DCD0138414FD00A198D7 /* ElectronicsVC.xib */,
+				0EB7DCC1138414AA00A198D7 /* LightingVC.h */,
+				0EB7DCC2138414AA00A198D7 /* LightingVC.m */,
+				0EB7DCC3138414AB00A198D7 /* LightingVC.xib */,
+				0EB7DCC6138414C900A198D7 /* TransitVC.h */,
+				0EB7DCC7138414C900A198D7 /* TransitVC.m */,
+				0EB7DCC8138414C900A198D7 /* TransitVC.xib */,
+			);
+			name = CategoryVCs;
+			sourceTree = "<group>";
+		};
+		0EB2B9921387B44D00F743BC /* Appliances */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Appliances;
+			sourceTree = "<group>";
+		};
 		0EB7DC741384124F00A198D7 = {
 			isa = PBXGroup;
 			children = (
@@ -170,23 +212,13 @@
 			children = (
 				0EB7DC951384125000A198D7 /* SavingGreenAppDelegate.h */,
 				0EB7DC961384125000A198D7 /* SavingGreenAppDelegate.m */,
-				0EB7DCB71384148600A198D7 /* HotColdVC.h */,
-				0EB7DCB81384148600A198D7 /* HotColdVC.m */,
-				0EB7DCB91384148600A198D7 /* HotColdVC.xib */,
+				0E702F481387B18F00A01BBD /* CategoryVC.h */,
+				0E702F491387B19200A01BBD /* CategoryVC.m */,
+				0E702F4A1387B19500A01BBD /* CategoryVC.xib */,
 				0E63E1EB1384A3C100F59540 /* Appliance.h */,
 				0E63E1EC1384A3C100F59540 /* Appliance.m */,
-				0EB7DCBC1384149900A198D7 /* KitchenVC.h */,
-				0EB7DCBD1384149900A198D7 /* KitchenVC.m */,
-				0EB7DCBE1384149A00A198D7 /* KitchenVC.xib */,
-				0EB7DCCE138414FC00A198D7 /* ElectronicsVC.h */,
-				0EB7DCCF138414FC00A198D7 /* ElectronicsVC.m */,
-				0EB7DCD0138414FD00A198D7 /* ElectronicsVC.xib */,
-				0EB7DCC1138414AA00A198D7 /* LightingVC.h */,
-				0EB7DCC2138414AA00A198D7 /* LightingVC.m */,
-				0EB7DCC3138414AB00A198D7 /* LightingVC.xib */,
-				0EB7DCC6138414C900A198D7 /* TransitVC.h */,
-				0EB7DCC7138414C900A198D7 /* TransitVC.m */,
-				0EB7DCC8138414C900A198D7 /* TransitVC.xib */,
+				0EB2B9921387B44D00F743BC /* Appliances */,
+				0EB2B9901387B43E00F743BC /* CategoryVCs */,
 				0EB7DC981384125100A198D7 /* MainMenu.xib */,
 				0EB7DC8A1384125000A198D7 /* Supporting Files */,
 			);
@@ -308,6 +340,8 @@
 				0E7AD859138528600019C5C2 /* lightingIcon.png in Resources */,
 				0E7AD85A138528600019C5C2 /* totalIcon.jpg in Resources */,
 				0E7AD85B138528600019C5C2 /* sum icon.jpg in Resources */,
+				0E702F471387AFE500A01BBD /* TutorialVC.xib in Resources */,
+				0E702F4C1387B19B00A01BBD /* CategoryVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +385,8 @@
 				0EB7DCC9138414CA00A198D7 /* TransitVC.m in Sources */,
 				0EB7DCD1138414FE00A198D7 /* ElectronicsVC.m in Sources */,
 				0E63E1ED1384A3C100F59540 /* Appliance.m in Sources */,
+				0E702F461387AFE500A01BBD /* TutorialVC.m in Sources */,
+				0E702F4B1387B19B00A01BBD /* CategoryVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

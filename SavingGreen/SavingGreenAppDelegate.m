@@ -7,10 +7,16 @@
 //
 
 #import "SavingGreenAppDelegate.h"
+#import "CategoryVC.h"
+#import "TutorialVC.h"
+#import "HotColdVC.h"
+#import "KitchenVC.h"
+#import "ElectronicsVC.h"
+#import "LightingVC.h"
+#import "TransitVC.h"
 
 @implementation SavingGreenAppDelegate
 
-@synthesize window;
 @synthesize perGallonInCents;
 @synthesize perKWHInCents;
 @synthesize perThermInCents;
@@ -18,7 +24,7 @@
 @synthesize perKWH;
 @synthesize perTherm;
 
-@synthesize arrayOfVCs;
+@synthesize categoryVCs;
 
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -30,20 +36,27 @@
     self.perKWH = 0.15;
     self.perTherm = 1.30;
     
-    hotColdVC = [[HotColdVC alloc] initWithNibName:@"HotColdVC" bundle:nil]; 
+    CategoryVC *tutorialVC = [[TutorialVC alloc] initWithNibName:@"TutorialVC" bundle:nil];
+    tutorialVC.title = @"Tutorial";
+    CategoryVC *hotColdVC = [[HotColdVC alloc] initWithNibName:@"HotColdVC" bundle:nil]; 
     hotColdVC.title = @"Heating & Cooling";
-    kitchenVC = [[KitchenVC alloc] initWithNibName:@"KitchenVC" bundle:nil];
+    CategoryVC *kitchenVC = [[KitchenVC alloc] initWithNibName:@"KitchenVC" bundle:nil];
     kitchenVC.title = @"Kitchen";
-    electronicsVC = [[ElectronicsVC alloc] initWithNibName:@"ElectronicsVC" bundle:nil];
+    CategoryVC *electronicsVC = [[ElectronicsVC alloc] initWithNibName:@"ElectronicsVC" bundle:nil];
     electronicsVC.title = @"Electronics";
-    lightingVC = [[LightingVC alloc] initWithNibName:@"LightingVC" bundle:nil];
+    CategoryVC *lightingVC = [[LightingVC alloc] initWithNibName:@"LightingVC" bundle:nil];
     lightingVC.title = @"Lighting";
-    transitVC = [[TransitVC alloc] initWithNibName:@"TransitVC" bundle:nil];
+    CategoryVC *transitVC = [[TransitVC alloc] initWithNibName:@"TransitVC" bundle:nil];
     transitVC.title = @"Transit";
     
-    arrayOfVCs = [[NSArray alloc] initWithObjects:hotColdVC, kitchenVC, electronicsVC, lightingVC, transitVC, nil];
+    categoryVCs = [[NSArray alloc] initWithObjects:hotColdVC, kitchenVC, electronicsVC, lightingVC, transitVC, nil];
+    [hotColdVC release];
+    [kitchenVC release];
+    [electronicsVC release];
+    [lightingVC release];
+    [transitVC release];
     
-    [mainScrollView setDocumentView:hotColdVC.view];
+    [mainScrollView setDocumentView:tutorialVC.view];
     [sidebar reloadData];
 }
 
@@ -83,25 +96,20 @@
 
 
 - (void)dealloc {
-    [hotColdVC release];
-    [kitchenVC release];
-    [electronicsVC release];
-    [lightingVC release];
-    [transitVC release];
-    [arrayOfVCs release];
+    [categoryVCs release];
     [iconAttachments release];
     [super dealloc];
 }
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView {
-    return [arrayOfVCs count];
+    return [categoryVCs count];
 }
 
 - (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
 
     [self generateIconAttachments];
     
-    NSString *title = [(NSViewController *)[arrayOfVCs objectAtIndex:rowIndex] title];
+    NSString *title = [(CategoryVC *)[categoryVCs objectAtIndex:rowIndex] title];
     
     NSMutableAttributedString *result = [[NSMutableAttributedString alloc] initWithString:title];
 
@@ -114,7 +122,7 @@
 
 - (void)tableView:(NSTableView *)aTableView willDisplayCell:(id)aCell forTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
     
-    NSView *newView = [[arrayOfVCs objectAtIndex:rowIndex] view];
+    NSView *newView = [[categoryVCs objectAtIndex:rowIndex] view];
     
     NSPoint topLeft = NSMakePoint(0.0,NSMaxY([[mainScrollView documentView] frame])-NSHeight([[mainScrollView contentView] bounds]));
     
