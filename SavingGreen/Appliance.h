@@ -13,21 +13,19 @@
     
     NSString *name;
     
-    double powerRating; // in Watts
+    double powerRating; // in Watts, default is 0
     int numberOfAppliances; // Default is 1
-    double hoursPerDay;
-    double monthsPerYear;
-    
-    // Other ways of calculations
-    
-    double minutesPerDay;
-    double minutesPerEvent; // per load, etc.
-    double eventsPerWeek;
+    double minutesPerHour; // Default is 60
+    double hoursPerDay; // Default is 24
+    double daysPerWeek; // Default is 7
+    double weeksPerMonth; // Default is 4.345
+    double monthsPerYear; // Default is 12
     double efficiency; // Default is 1.00
+    double averageMonthlyCost; // Default is 0
     
-    double perGallon;
-    double perKWH;
-    double perTherm;
+//    double perGallon;
+//    double perKWH;
+//    double perTherm;
 
 @private
     
@@ -36,12 +34,13 @@
 @property (retain) NSString *name;
 @property double powerRating;
 @property int numberOfAppliances;
-@property double minutesPerDay;
+@property double minutesPerHour;
 @property double hoursPerDay;
+@property double daysPerWeek;
+@property double weeksPerMonth;
 @property double monthsPerYear;
-@property double minutesPerEvent;
-@property double eventsPerWeek;
 @property double efficiency;
+@property double averageMonthlyCost;
 
 //@property (readonly) double perGallon;
 //@property (readonly) double perKWH;
@@ -54,5 +53,6 @@
 
 @property (readonly) double monthlyCost;
 @property (readonly) double annualCost;
+@property (readonly) int level; // Green-ness on a scale from 1-5
 
 @end

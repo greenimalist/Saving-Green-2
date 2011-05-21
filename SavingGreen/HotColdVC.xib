@@ -56,6 +56,7 @@
 						<string key="NSFrame">{{17, 554}, {216, 29}}</string>
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSTextFieldCell" key="NSCell" id="311883825">
 							<int key="NSCellFlags">68288064</int>
@@ -2138,7 +2139,7 @@
 															<reference key="NSNextKeyView" ref="633373496"/>
 															<bool key="NSEnabled">YES</bool>
 															<object class="NSStepperCell" key="NSCell" id="707960330">
-																<int key="NSCellFlags">917024</int>
+																<int key="NSCellFlags">392736</int>
 																<int key="NSCellFlags2">0</int>
 																<reference key="NSControlView" ref="327296347"/>
 																<double key="NSMaxValue">100</double>
@@ -2503,7 +2504,7 @@
 															<reference key="NSNextKeyView" ref="14512316"/>
 															<bool key="NSEnabled">YES</bool>
 															<object class="NSStepperCell" key="NSCell" id="818262257">
-																<int key="NSCellFlags">917024</int>
+																<int key="NSCellFlags">392736</int>
 																<int key="NSCellFlags2">0</int>
 																<reference key="NSControlView" ref="177136556"/>
 																<double key="NSMaxValue">100</double>
@@ -2567,7 +2568,6 @@
 									<nil key="NSNextResponder"/>
 									<int key="NSvFlags">256</int>
 									<string key="NSFrame">{{10, 33}, {641, 519}}</string>
-									<reference key="NSNextKeyView" ref="819262159"/>
 								</object>
 								<string key="NSLabel">Tips</string>
 								<reference key="NSColor" ref="407549844"/>
@@ -2584,7 +2584,7 @@
 						</array>
 					</object>
 				</array>
-				<string key="NSFrameSize">{687, 603}</string>
+				<string key="NSFrameSize">{684, 603}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="615431509"/>
@@ -2942,22 +2942,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: self.hairDrier.minutesPerDay</string>
-						<reference key="source" ref="177136556"/>
-						<reference key="destination" ref="1001"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="177136556"/>
-							<reference key="NSDestination" ref="1001"/>
-							<string key="NSLabel">value: self.hairDrier.minutesPerDay</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">self.hairDrier.minutesPerDay</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">554</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: self.hairDrier.monthsPerYear</string>
 						<reference key="source" ref="14512316"/>
 						<reference key="destination" ref="1001"/>
@@ -3038,22 +3022,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: self.hairDrier.minutesPerDay</string>
-						<reference key="source" ref="738319929"/>
-						<reference key="destination" ref="1001"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="738319929"/>
-							<reference key="NSDestination" ref="1001"/>
-							<string key="NSLabel">value: self.hairDrier.minutesPerDay</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">self.hairDrier.minutesPerDay</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">573</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
 						<string key="label">selectedTag: self.clothesDrier.powerRating</string>
 						<reference key="source" ref="587056342"/>
 						<reference key="destination" ref="1001"/>
@@ -3075,70 +3043,6 @@
 						<reference key="destination" ref="247995291"/>
 					</object>
 					<int key="connectionID">589</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: self.clothesDrier.minutesPerEvent</string>
-						<reference key="source" ref="181458049"/>
-						<reference key="destination" ref="1001"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="181458049"/>
-							<reference key="NSDestination" ref="1001"/>
-							<string key="NSLabel">value: self.clothesDrier.minutesPerEvent</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">self.clothesDrier.minutesPerEvent</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">594</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: self.clothesDrier.minutesPerEvent</string>
-						<reference key="source" ref="1056013693"/>
-						<reference key="destination" ref="1001"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="1056013693"/>
-							<reference key="NSDestination" ref="1001"/>
-							<string key="NSLabel">value: self.clothesDrier.minutesPerEvent</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">self.clothesDrier.minutesPerEvent</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">598</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: self.clothesDrier.eventsPerWeek</string>
-						<reference key="source" ref="150162946"/>
-						<reference key="destination" ref="1001"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="150162946"/>
-							<reference key="NSDestination" ref="1001"/>
-							<string key="NSLabel">value: self.clothesDrier.eventsPerWeek</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">self.clothesDrier.eventsPerWeek</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">602</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: self.clothesDrier.eventsPerWeek</string>
-						<reference key="source" ref="92627245"/>
-						<reference key="destination" ref="1001"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="92627245"/>
-							<reference key="NSDestination" ref="1001"/>
-							<string key="NSLabel">value: self.clothesDrier.eventsPerWeek</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">self.clothesDrier.eventsPerWeek</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">606</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -3187,6 +3091,118 @@
 						</object>
 					</object>
 					<int key="connectionID">615</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: values</string>
+						<reference key="source" ref="674172041"/>
+						<reference key="destination" ref="626652246"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="674172041"/>
+							<reference key="NSDestination" ref="626652246"/>
+							<string key="NSLabel">value: values</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">values</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">624</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: self.clothesDrier.minutesPerHour</string>
+						<reference key="source" ref="181458049"/>
+						<reference key="destination" ref="1001"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="181458049"/>
+							<reference key="NSDestination" ref="1001"/>
+							<string key="NSLabel">value: self.clothesDrier.minutesPerHour</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">self.clothesDrier.minutesPerHour</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">625</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: self.clothesDrier.minutesPerHour</string>
+						<reference key="source" ref="1056013693"/>
+						<reference key="destination" ref="1001"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="1056013693"/>
+							<reference key="NSDestination" ref="1001"/>
+							<string key="NSLabel">value: self.clothesDrier.minutesPerHour</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">self.clothesDrier.minutesPerHour</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">626</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: self.clothesDrier.daysPerWeek</string>
+						<reference key="source" ref="150162946"/>
+						<reference key="destination" ref="1001"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="150162946"/>
+							<reference key="NSDestination" ref="1001"/>
+							<string key="NSLabel">value: self.clothesDrier.daysPerWeek</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">self.clothesDrier.daysPerWeek</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">627</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: self.clothesDrier.daysPerWeek</string>
+						<reference key="source" ref="92627245"/>
+						<reference key="destination" ref="1001"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="92627245"/>
+							<reference key="NSDestination" ref="1001"/>
+							<string key="NSLabel">value: self.clothesDrier.daysPerWeek</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">self.clothesDrier.daysPerWeek</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">628</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: self.hairDrier.minutesPerHour</string>
+						<reference key="source" ref="738319929"/>
+						<reference key="destination" ref="1001"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="738319929"/>
+							<reference key="NSDestination" ref="1001"/>
+							<string key="NSLabel">value: self.hairDrier.minutesPerHour</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">self.hairDrier.minutesPerHour</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">630</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: self.hairDrier.minutesPerHour</string>
+						<reference key="source" ref="177136556"/>
+						<reference key="destination" ref="1001"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="177136556"/>
+							<reference key="NSDestination" ref="1001"/>
+							<string key="NSLabel">value: self.hairDrier.minutesPerHour</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">self.hairDrier.minutesPerHour</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">632</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -3266,7 +3282,6 @@
 							<reference ref="674172041"/>
 							<reference ref="671547483"/>
 							<reference ref="439592392"/>
-							<reference ref="479757"/>
 							<reference ref="829989042"/>
 							<reference ref="197050326"/>
 							<reference ref="407260959"/>
@@ -3274,6 +3289,7 @@
 							<reference ref="687876188"/>
 							<reference ref="651068053"/>
 							<reference ref="440805106"/>
+							<reference ref="479757"/>
 						</array>
 						<reference key="parent" ref="864526122"/>
 					</object>
@@ -4401,21 +4417,6 @@
 						<reference key="parent" ref="222549692"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">471</int>
-						<reference key="object" ref="1025854232"/>
-						<reference key="parent" ref="110302927"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">472</int>
-						<reference key="object" ref="50350849"/>
-						<reference key="parent" ref="24788642"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">473</int>
-						<reference key="object" ref="648025004"/>
-						<reference key="parent" ref="281336589"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">479</int>
 						<reference key="object" ref="626652246"/>
 						<reference key="parent" ref="0"/>
@@ -4695,6 +4696,21 @@
 						<reference key="object" ref="327962912"/>
 						<reference key="parent" ref="351539742"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">633</int>
+						<reference key="object" ref="648025004"/>
+						<reference key="parent" ref="281336589"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">634</int>
+						<reference key="object" ref="50350849"/>
+						<reference key="parent" ref="24788642"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">635</int>
+						<reference key="object" ref="1025854232"/>
+						<reference key="parent" ref="110302927"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -4806,15 +4822,6 @@
 				<string key="453.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="459.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="460.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<integer value="1041" key="471.IBNumberFormatterBehaviorMetadataKey"/>
-				<boolean value="YES" key="471.IBNumberFormatterLocalizesFormatMetadataKey"/>
-				<string key="471.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<integer value="1041" key="472.IBNumberFormatterBehaviorMetadataKey"/>
-				<boolean value="YES" key="472.IBNumberFormatterLocalizesFormatMetadataKey"/>
-				<string key="472.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<integer value="1041" key="473.IBNumberFormatterBehaviorMetadataKey"/>
-				<boolean value="YES" key="473.IBNumberFormatterLocalizesFormatMetadataKey"/>
-				<string key="473.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1041" key="508.IBNumberFormatterBehaviorMetadataKey"/>
 				<boolean value="YES" key="508.IBNumberFormatterLocalizesFormatMetadataKey"/>
 				<string key="508.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -4856,6 +4863,15 @@
 				<string key="618.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="619.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="62.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<integer value="1041" key="633.IBNumberFormatterBehaviorMetadataKey"/>
+				<boolean value="YES" key="633.IBNumberFormatterLocalizesFormatMetadataKey"/>
+				<string key="633.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<integer value="1041" key="634.IBNumberFormatterBehaviorMetadataKey"/>
+				<boolean value="YES" key="634.IBNumberFormatterLocalizesFormatMetadataKey"/>
+				<string key="634.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<integer value="1041" key="635.IBNumberFormatterBehaviorMetadataKey"/>
+				<boolean value="YES" key="635.IBNumberFormatterLocalizesFormatMetadataKey"/>
+				<string key="635.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="65.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="66.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="69.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -4887,7 +4903,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">623</int>
+			<int key="maxID">635</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

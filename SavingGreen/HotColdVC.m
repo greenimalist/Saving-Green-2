@@ -18,27 +18,29 @@
     if (self) {
         heater = [[Appliance alloc] init];
         heater.powerRating = 7941;
-        heater.numberOfAppliances = 1;
         heater.hoursPerDay = 12;
         heater.monthsPerYear = 6;
         
         cooler = [[Appliance alloc] init];
         cooler.powerRating = 3500;
-        cooler.numberOfAppliances = 1;
         cooler.hoursPerDay = 12;
         cooler.monthsPerYear = 6;
         
         hairDrier = [[Appliance alloc] init];
         hairDrier.powerRating = 800;
-        hairDrier.numberOfAppliances = 1;
-        hairDrier.minutesPerDay = 40;
+        hairDrier.minutesPerHour = 40;
+        hairDrier.hoursPerDay = 1;
         hairDrier.monthsPerYear = 12;
         
         clothesDrier = [[Appliance alloc] init];
         clothesDrier.powerRating = 1000;
-        clothesDrier.numberOfAppliances = 1;
-        clothesDrier.minutesPerEvent = 40;
-        clothesDrier.eventsPerWeek = 7.5;
+        clothesDrier.minutesPerHour = 40;
+        clothesDrier.hoursPerDay = 1;
+        clothesDrier.daysPerWeek = 7.5;
+        
+        NSLog(@"Heater monthly cost: %f", heater.monthlyCost);
+        NSLog(@"Cooler monthly cost: %f", cooler.monthlyCost);
+        NSLog(@"Hair Drier monthly cost: %f", hairDrier.monthlyCost);
     }
     
     return self;
