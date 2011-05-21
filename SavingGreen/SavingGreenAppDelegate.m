@@ -45,24 +45,38 @@
     
     [mainScrollView setDocumentView:hotColdVC.view];
     [sidebar reloadData];
-    
-//    NSTextAttachment *attachment = [[[NSTextAttachment alloc] init] autorelease];
-//    id <NSTextAttachmentCell> cell = [attachment attachmentCell];
-//    
-//    NSString *iconPath = [[NSBundle mainBundle] pathForResource:@"car icon" ofType:@"png"];
-//    NSImage *icon = [[[NSImage alloc] initWithContentsOfFile:iconPath] autorelease]; // or wherever you are getting your image
-//    [cell setImage: icon];
-//    
-//    NSString *name = [self name];
-//    NSAttributedString *attrname;
-//    attrname = [[NSAttributedString alloc] initWithString: name];
-//    
-//    NSMutableAttributedString *prettyName;
-//    prettyName = (id)[NSMutableAttributedString attributedStringWithAttachment:
-//                      attachment]; // cast to quiet compiler warning
-//    [prettyName appendAttributedString: attrname];
-
 }
+
+- (void)generateIconAttachments {
+
+    if (iconAttachments != nil)
+        return;
+    
+    iconAttachments = [[NSMutableArray alloc] init];
+    
+    NSImage *hotColdImage = [NSImage imageNamed:@"hotColdIcon.jpg"];
+    NSImage *kitchenImage = [NSImage imageNamed:@"kitchenIcon.jpg"];
+    NSImage *electronicsImage = [NSImage imageNamed:@"electronicsIcon.png"];
+    NSImage *lightingImage = [NSImage imageNamed:@"lightingIcon.png"];
+    NSImage *transitImage = [NSImage imageNamed:@"transitIcon.png"];
+    NSImage *totalImage = [NSImage imageNamed:@"totalIcon.jpg"];
+    
+    
+
+    NSArray *imagesArray = [NSArray arrayWithObjects:hotColdImage, kitchenImage, electronicsImage, lightingImage, transitImage, totalImage, nil];
+        
+    for (NSImage *image in imagesArray)
+    {
+        NSFileWrapper *fwrap = [[[NSFileWrapper alloc] initRegularFileWithContents:[image TIFFRepresentation]] autorelease];
+        NSString *imageName = [image name];        
+        imageName = [imageName stringByAppendingPathExtension: @".tiff"];
+        [fwrap setFilename: imageName];
+        [fwrap setPreferredFilename: imageName];
+        NSTextAttachment *imageAttachment = [[[NSTextAttachment alloc] initWithFileWrapper:fwrap] autorelease];
+        [iconAttachments addObject:imageAttachment];
+    }
+}
+
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
 }
@@ -75,6 +89,7 @@
     [lightingVC release];
     [transitVC release];
     [arrayOfVCs release];
+    [iconAttachments release];
     [super dealloc];
 }
 
@@ -84,7 +99,16 @@
 
 - (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
 
-    NSString *result = [(NSViewController *)[arrayOfVCs objectAtIndex:rowIndex] title];
+    [self generateIconAttachments];
+    
+    NSString *title = [(NSViewController *)[arrayOfVCs objectAtIndex:rowIndex] title];
+    
+    NSMutableAttributedString *result = [[NSMutableAttributedString alloc] initWithString:title];
+
+    NSTextAttachment *attachment = [iconAttachments objectAtIndex:rowIndex];
+        
+    [result appendAttributedString: [NSAttributedString attributedStringWithAttachment: attachment]];
+    
     return result;
 }
 

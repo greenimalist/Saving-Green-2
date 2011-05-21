@@ -31,7 +31,9 @@
     double perGallon;
     double perKWH;
     double perTherm;
-
+    
+    NSMutableArray *iconAttachments;
+    
 @private
     NSWindow *window;
     IBOutlet NSTableView *sidebar;
@@ -47,5 +49,6 @@
 @property double perKWH;
 @property double perTherm;
 
+- (void)generateIconAttachments;
 
 @end

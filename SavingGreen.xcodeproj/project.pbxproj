@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0E63E1ED1384A3C100F59540 /* Appliance.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E63E1EC1384A3C100F59540 /* Appliance.m */; };
-		0E7AD855138528600019C5C2 /* car icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AD84E138528600019C5C2 /* car icon.png */; };
-		0E7AD856138528600019C5C2 /* computer icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AD84F138528600019C5C2 /* computer icon.png */; };
-		0E7AD857138528600019C5C2 /* cooking icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AD850138528600019C5C2 /* cooking icon.jpg */; };
-		0E7AD858138528600019C5C2 /* heating icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AD851138528600019C5C2 /* heating icon.jpg */; };
-		0E7AD859138528600019C5C2 /* light icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AD852138528600019C5C2 /* light icon.png */; };
-		0E7AD85A138528600019C5C2 /* overview icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AD853138528600019C5C2 /* overview icon.jpg */; };
+		0E7AD855138528600019C5C2 /* transitIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AD84E138528600019C5C2 /* transitIcon.png */; };
+		0E7AD856138528600019C5C2 /* electronicsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AD84F138528600019C5C2 /* electronicsIcon.png */; };
+		0E7AD857138528600019C5C2 /* kitchenIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AD850138528600019C5C2 /* kitchenIcon.jpg */; };
+		0E7AD858138528600019C5C2 /* hotColdIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AD851138528600019C5C2 /* hotColdIcon.jpg */; };
+		0E7AD859138528600019C5C2 /* lightingIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AD852138528600019C5C2 /* lightingIcon.png */; };
+		0E7AD85A138528600019C5C2 /* totalIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AD853138528600019C5C2 /* totalIcon.jpg */; };
 		0E7AD85B138528600019C5C2 /* sum icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E7AD854138528600019C5C2 /* sum icon.jpg */; };
 		0EB7DC841384125000A198D7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EB7DC831384125000A198D7 /* Cocoa.framework */; };
 		0EB7DC8E1384125000A198D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7DC8C1384125000A198D7 /* InfoPlist.strings */; };
@@ -50,12 +50,12 @@
 /* Begin PBXFileReference section */
 		0E63E1EB1384A3C100F59540 /* Appliance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appliance.h; sourceTree = "<group>"; };
 		0E63E1EC1384A3C100F59540 /* Appliance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appliance.m; sourceTree = "<group>"; };
-		0E7AD84E138528600019C5C2 /* car icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car icon.png"; sourceTree = "<group>"; };
-		0E7AD84F138528600019C5C2 /* computer icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "computer icon.png"; sourceTree = "<group>"; };
-		0E7AD850138528600019C5C2 /* cooking icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cooking icon.jpg"; sourceTree = "<group>"; };
-		0E7AD851138528600019C5C2 /* heating icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "heating icon.jpg"; sourceTree = "<group>"; };
-		0E7AD852138528600019C5C2 /* light icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "light icon.png"; sourceTree = "<group>"; };
-		0E7AD853138528600019C5C2 /* overview icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "overview icon.jpg"; sourceTree = "<group>"; };
+		0E7AD84E138528600019C5C2 /* transitIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transitIcon.png; sourceTree = "<group>"; };
+		0E7AD84F138528600019C5C2 /* electronicsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = electronicsIcon.png; sourceTree = "<group>"; };
+		0E7AD850138528600019C5C2 /* kitchenIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kitchenIcon.jpg; sourceTree = "<group>"; };
+		0E7AD851138528600019C5C2 /* hotColdIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hotColdIcon.jpg; sourceTree = "<group>"; };
+		0E7AD852138528600019C5C2 /* lightingIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightingIcon.png; sourceTree = "<group>"; };
+		0E7AD853138528600019C5C2 /* totalIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = totalIcon.jpg; sourceTree = "<group>"; };
 		0E7AD854138528600019C5C2 /* sum icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sum icon.jpg"; sourceTree = "<group>"; };
 		0EB7DC7F1384125000A198D7 /* SavingGreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavingGreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB7DC831384125000A198D7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -116,12 +116,12 @@
 		0E7AD84D138528600019C5C2 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				0E7AD84E138528600019C5C2 /* car icon.png */,
-				0E7AD84F138528600019C5C2 /* computer icon.png */,
-				0E7AD850138528600019C5C2 /* cooking icon.jpg */,
-				0E7AD851138528600019C5C2 /* heating icon.jpg */,
-				0E7AD852138528600019C5C2 /* light icon.png */,
-				0E7AD853138528600019C5C2 /* overview icon.jpg */,
+				0E7AD84E138528600019C5C2 /* transitIcon.png */,
+				0E7AD84F138528600019C5C2 /* electronicsIcon.png */,
+				0E7AD850138528600019C5C2 /* kitchenIcon.jpg */,
+				0E7AD851138528600019C5C2 /* hotColdIcon.jpg */,
+				0E7AD852138528600019C5C2 /* lightingIcon.png */,
+				0E7AD853138528600019C5C2 /* totalIcon.jpg */,
 				0E7AD854138528600019C5C2 /* sum icon.jpg */,
 			);
 			path = Icons;
@@ -301,12 +301,12 @@
 				0EB7DCC5138414AB00A198D7 /* LightingVC.xib in Resources */,
 				0EB7DCCA138414CA00A198D7 /* TransitVC.xib in Resources */,
 				0EB7DCD2138414FE00A198D7 /* ElectronicsVC.xib in Resources */,
-				0E7AD855138528600019C5C2 /* car icon.png in Resources */,
-				0E7AD856138528600019C5C2 /* computer icon.png in Resources */,
-				0E7AD857138528600019C5C2 /* cooking icon.jpg in Resources */,
-				0E7AD858138528600019C5C2 /* heating icon.jpg in Resources */,
-				0E7AD859138528600019C5C2 /* light icon.png in Resources */,
-				0E7AD85A138528600019C5C2 /* overview icon.jpg in Resources */,
+				0E7AD855138528600019C5C2 /* transitIcon.png in Resources */,
+				0E7AD856138528600019C5C2 /* electronicsIcon.png in Resources */,
+				0E7AD857138528600019C5C2 /* kitchenIcon.jpg in Resources */,
+				0E7AD858138528600019C5C2 /* hotColdIcon.jpg in Resources */,
+				0E7AD859138528600019C5C2 /* lightingIcon.png in Resources */,
+				0E7AD85A138528600019C5C2 /* totalIcon.jpg in Resources */,
 				0E7AD85B138528600019C5C2 /* sum icon.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
