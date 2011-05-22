@@ -2549,7 +2549,7 @@
 																	<double key="NSMaxWidth">1000</double>
 																	<object class="NSTableHeaderCell" key="NSHeaderCell">
 																		<int key="NSCellFlags">75628096</int>
-																		<int key="NSCellFlags2">2048</int>
+																		<int key="NSCellFlags2">134219776</int>
 																		<string key="NSContents"/>
 																		<object class="NSFont" key="NSSupport" id="26">
 																			<string key="NSName">LucidaGrande</string>
@@ -2580,6 +2580,7 @@
 																			<int key="NSfFlags">16</int>
 																		</object>
 																		<reference key="NSControlView" ref="182659334"/>
+																		<bool key="NSDrawsBackground">YES</bool>
 																		<object class="NSColor" key="NSBackgroundColor" id="124117614">
 																			<int key="NSColorSpace">6</int>
 																			<string key="NSCatalogName">System</string>
@@ -2732,6 +2733,7 @@
 																	<reference key="NSSuperview" ref="871244706"/>
 																	<reference key="NSWindow"/>
 																	<reference key="NSNextKeyView" ref="1020977866"/>
+																	<int key="NSArrowsLoc">2</int>
 																	<reference key="NSTarget" ref="871244706"/>
 																	<string key="NSAction">_doScroller:</string>
 																	<double key="NSCurValue">1</double>
@@ -2745,6 +2747,7 @@
 																	<reference key="NSWindow"/>
 																	<reference key="NSNextKeyView" ref="1060142702"/>
 																	<int key="NSsFlags">1</int>
+																	<int key="NSArrowsLoc">2</int>
 																	<reference key="NSTarget" ref="871244706"/>
 																	<string key="NSAction">_doScroller:</string>
 																	<double key="NSPercent">0.50602412223815918</double>

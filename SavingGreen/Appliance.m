@@ -12,7 +12,16 @@
 
 @implementation Appliance
 
-@synthesize name, powerRating, numberOfAppliances, minutesPerHour, hoursPerDay, daysPerWeek, weeksPerMonth, monthsPerYear, efficiency, averageMonthlyCost;
+@synthesize name;
+@synthesize powerRating;
+@synthesize numberOfAppliances;
+@synthesize minutesPerHour;
+@synthesize hoursPerDay;
+@synthesize daysPerWeek;
+@synthesize weeksPerMonth;
+@synthesize monthsPerYear;
+@synthesize efficiency;
+@synthesize averageMonthlyCost;
 //@synthesize perGallon, perKWH, perTherm;
 
 - (id)init

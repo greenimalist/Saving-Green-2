@@ -67,12 +67,12 @@
     
     iconAttachments = [[NSMutableArray alloc] init];
     
-    NSImage *hotColdImage = [NSImage imageNamed:@"hotColdIcon.jpg"];
-    NSImage *kitchenImage = [NSImage imageNamed:@"kitchenIcon.jpg"];
+    NSImage *hotColdImage = [NSImage imageNamed:@"hotColdIcon.png"];
+    NSImage *kitchenImage = [NSImage imageNamed:@"kitchenIcon.png"];
     NSImage *electronicsImage = [NSImage imageNamed:@"electronicsIcon.png"];
     NSImage *lightingImage = [NSImage imageNamed:@"lightingIcon.png"];
     NSImage *transitImage = [NSImage imageNamed:@"transitIcon.png"];
-    NSImage *totalImage = [NSImage imageNamed:@"totalIcon.jpg"];
+    NSImage *totalImage = [NSImage imageNamed:@"totalIcon.png"];
     
     
 
@@ -87,6 +87,8 @@
         [fwrap setPreferredFilename: imageName];
         NSTextAttachment *imageAttachment = [[[NSTextAttachment alloc] initWithFileWrapper:fwrap] autorelease];
         [iconAttachments addObject:imageAttachment];
+        NSLog(@"PNG: %@", image);
+        NSLog(@"TIFF: %@", [image TIFFRepresentation]);
     }
 }
 
@@ -120,14 +122,22 @@
     return result;
 }
 
-- (void)tableView:(NSTableView *)aTableView willDisplayCell:(id)aCell forTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex {
+- (void)tableViewSelectionDidChange:(NSNotification *)aNotification {    
+    NSInteger rowIndex = [sidebar selectedRow];
     
     NSView *newView = [[categoryVCs objectAtIndex:rowIndex] view];
     
     NSPoint topLeft = NSMakePoint(0.0,NSMaxY([[mainScrollView documentView] frame])-NSHeight([[mainScrollView contentView] bounds]));
-    
+////    
     [mainScrollView setDocumentView: newView];
-    [[mainScrollView contentView] scrollToPoint:topLeft];
+    [[mainScrollView contentView] scrollPoint:topLeft];
+//    [[mainScrollView contentView] scrollToPoint:NSMakePoint(0, 200.0)];
+
+//    [[mainScrollView verticalScroller] setFloatValue:0.0];
+}
+
+- (BOOL)tableView:(NSTableView *)tableView shouldShowCellExpansionForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+    return NO;
 }
 
 - (void)setValue:(id)value forKey:(NSString *)key {
@@ -147,9 +157,9 @@
 
 // Split View Delegate Methods
 
-- (BOOL)splitView:(NSSplitView *)splitView
-shouldAdjustSizeOfSubview:(NSView *)subview {
-    return NO;
-}
+//- (BOOL)splitView:(NSSplitView *)splitView
+//shouldAdjustSizeOfSubview:(NSView *)subview {
+//    return NO;
+//}
 
 @end
